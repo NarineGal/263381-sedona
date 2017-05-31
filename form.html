@@ -11,92 +11,93 @@
         <span class="main‐nav__toggler">
           <span></span>
         </span>
-        <div class="main‐nav__wrapper">
-          <ul class="main‐nav__list">
-            <li class="main‐nav__item"><a href="index.html">Главная</a></li>
-            <li class="main‐nav__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main‐nav__item main‐nav__item‐‐active"><a>Форма отзыва</a></li>
-            <li class="main‐nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML academy</a></li>
-          </ul>
-          <span class="main‐nav__close"><span></span></span>
+        <ul class="main‐nav__list">
+          <li class="main‐nav__item"><a href="index.html">Главная</a></li>
+          <li class="main‐nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main‐nav__item main‐nav__item‐‐active"><a>Форма отзыва</a></li>
+          <li class="main‐nav__item"><a href="https://htmlacademy.ru/" target="_blank">HTML academy</a></li>
+        </ul>
       </nav>
       <div class="page-header__logo">
         <img src="http://placehold.it/150x100" alt="" title="Logo">
       </div>
     </header>
 
-    <main class="review">
-      <h1 class="review__title">Оставьте свой отзыв</h1>
-      <p class="review__descr">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <main class="page-content">
 
-      <form class="review__contact‐form" action="https://echo.htmlacademy.ru/" method="post">
+      <article class="review">
 
-        <section class="review__reviewer">
-          <h2 class="review__section-title">Представьтесь:</h2>
-          <label class="field‐text review__form‐field">Имя:
-            <input class="field‐text__input" type="text" placeholder="Имя" name="firstname">
-          </label>
-          <label class="field‐text review__form‐field">Фамилия:
-            <input class="field‐text__input" type="text" placeholder="Фамилия" name="lastname">
-          </label>
-          <label class="field‐text review__form‐field">Отчество:
-            <input class="field‐text__input" type="text" placeholder="Отчество" name="middlename">
-          </label>
-        </section>
+        <h1 class="review__title">Оставьте свой отзыв</h1>
+        <p class="review__descr">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
-        <section class="review__contacts">
-          <h2 class="review__section-title">Контактная информация:</h2>
-          <label class="field‐text review__form‐field review__form‐field--i-phone">Контактный телефон*:
-            <input class="field‐text__input" type="text" placeholder="Введите телефон" title="Формат: xxx-xxxxx" name="phone" required pattern="[0-9]{3}-[0-9]{5}">
-          </label>
-          <label class="field‐text review__form‐field review__form‐field--i-phone">Электронная почта*:
-            <input class="field‐text__input" type="email" placeholder="Введите e-mail" name="email" required>
-          </label>
-        </section>
+        <form class="contact‐form" action="https://echo.htmlacademy.ru/" method="post">
 
-        <section class="review__impressions">
-          <h2 class="review__section-title">Ваше общее впечатление:</h2>
-          <label class="field‐radiogroup review__form‐field">
-            <input class="field‐radiogroup__input" type="radio" checked name="impressions" id="impressions1" value="positive"> Скорее положительное
-          </label>
-          <label class="field‐radiogroup review__form‐field">
-            <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions2" value="negative"> Скорее отрицательное
-          </label>
-          <label class="field‐radiogroup review__form‐field">
-            <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions3" value="difficult"> Затрудняюсь ответить
-          </label>
-        </section>
+          <section class="contact‐form__reviewer">
+            <h2 class="contact‐form__section-title">Представьтесь:</h2>
+            <label class="field‐text contact‐form__form‐field">Имя:
+              <input class="field‐text__input" type="text" placeholder="Имя" name="firstname">
+            </label>
+            <label class="field‐text contact‐form__form‐field">Фамилия:
+              <input class="field‐text__input" type="text" placeholder="Фамилия" name="lastname">
+            </label>
+            <label class="field‐text contact‐form__form‐field">Отчество:
+              <input class="field‐text__input" type="text" placeholder="Отчество" name="middlename">
+            </label>
+          </section>
 
-        <section class="review__visits">
-          <h2 class="review__section-title">Посещенные достопримечательности:</h2>
-          <label class="field‐checkbox review__form‐field">
-            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Мост Дьявола"> Мост Дьявола
-          </label>
-          <label class="field‐checkbox review__form‐field">
-            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Слайд-парк"> Слайд-парк
-          </label>
-          <label class="field‐checkbox review__form‐field">
-            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Гора-Колокол"> Гора-Колокол
-          </label>
-          <label class="field‐checkbox review__form‐field">
-            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Красные скалы"> Красные скалы
-          </label>
-        </section>
+          <section class="contact‐form__contacts">
+            <h2 class="contact‐form__section-title">Контактная информация:</h2>
+            <label class="field‐text contact‐form__form‐field contact‐form__form‐field--i-phone">Контактный телефон*:
+              <input class="field‐text__input" type="text" placeholder="Введите телефон" title="Формат: xxx-xxxxx" name="phone" required pattern="[0-9]{3}-[0-9]{5}">
+            </label>
+            <label class="field‐text contact‐form__form‐field contact‐form__form‐field--i-phone">Электронная почта*:
+              <input class="field‐text__input" type="email" placeholder="Введите e-mail" name="email" required>
+            </label>
+          </section>
 
-        <section class="review__emotions">
-          <h2 class="review__section-title">Опишите свои эмоции:</h2>
-          <label class="field‐textarea review__form‐field">
-            <textarea name="emotions" rows="8">Опишите подробно все свои восторги</textarea>
-          </label>
-        </section>
+          <section class="contact‐form__impressions">
+            <h2 class="contact‐form__section-title">Ваше общее впечатление:</h2>
+            <label class="field‐radiogroup contact‐form__form‐field">
+              <input class="field‐radiogroup__input" type="radio" checked name="impressions" id="impressions1" value="positive"> Скорее положительное
+            </label>
+            <label class="field‐radiogroup contact‐form__form‐field">
+              <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions2" value="negative"> Скорее отрицательное
+            </label>
+            <label class="field‐radiogroup contact‐form__form‐field">
+              <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions3" value="difficult"> Затрудняюсь ответить
+            </label>
+          </section>
 
-        <section class="review__action">
-          <button class="review__action__btn btn btn-lg" type="submit">Отправить отзыв</button>
-        </section>
+          <section class="contact‐form__visits">
+            <h2 class="contact‐form__section-title">Посещенные достопримечательности:</h2>
+            <label class="field‐checkbox contact‐form__form‐field">
+              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Мост Дьявола"> Мост Дьявола
+            </label>
+            <label class="field‐checkbox contact‐form__form‐field">
+              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Слайд-парк"> Слайд-парк
+            </label>
+            <label class="field‐checkbox contact‐form__form‐field">
+              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Гора-Колокол"> Гора-Колокол
+            </label>
+            <label class="field‐checkbox contact‐form__form‐field">
+              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Красные скалы"> Красные скалы
+            </label>
+          </section>
 
-        <p class="review__legend"><sup>*</sup> — обязательные поля</p>
+          <section class="contact‐form__emotions">
+            <h2 class="contact‐form__section-title">Опишите свои эмоции:</h2>
+            <label class="field‐textarea contact‐form__form‐field">
+              <textarea name="emotions" rows="8">Опишите подробно все свои восторги</textarea>
+            </label>
+          </section>
 
-      </form>
+          <button class="contact‐form__action__btn btn btn-lg" type="submit">Отправить отзыв</button>
+
+          <p class="contact‐form__legend"><sup>*</sup> — обязательные поля</p>
+
+        </form>
+
+      </article>
 
     </main>
 
