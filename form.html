@@ -48,7 +48,7 @@
           <section class="contact‐form__contacts">
             <h2 class="contact‐form__section-title">Контактная информация:</h2>
             <label class="field‐text contact‐form__form‐field contact‐form__form‐field--i-phone">Контактный телефон*:
-              <input class="field‐text__input" type="text" placeholder="Введите телефон" title="Формат: xxx-xxxxx" name="phone" required pattern="[0-9]{3}-[0-9]{5}">
+              <input class="field‐text__input" type="tel" placeholder="Введите телефон" title="Формат: xxx-xxxxx" name="phone" required pattern="[0-9]{3}-[0-9]{5}">
             </label>
             <label class="field‐text contact‐form__form‐field contact‐form__form‐field--i-phone">Электронная почта*:
               <input class="field‐text__input" type="email" placeholder="Введите e-mail" name="email" required>
@@ -56,32 +56,36 @@
           </section>
 
           <section class="contact‐form__impressions">
+
             <h2 class="contact‐form__section-title">Ваше общее впечатление:</h2>
-            <label class="field‐radiogroup contact‐form__form‐field">
-              <input class="field‐radiogroup__input" type="radio" checked name="impressions" id="impressions1" value="positive"> Скорее положительное
-            </label>
-            <label class="field‐radiogroup contact‐form__form‐field">
-              <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions2" value="negative"> Скорее отрицательное
-            </label>
-            <label class="field‐radiogroup contact‐form__form‐field">
-              <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions3" value="difficult"> Затрудняюсь ответить
-            </label>
+
+            <input class="field‐radiogroup__input" type="radio" checked name="impressions" id="impressions1" value="positive">
+            <label class="field‐radiogroup contact‐form__form‐field" for="impressions1">Скорее положительное</label>
+
+            <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions2" value="negative">
+            <label class="field‐radiogroup contact‐form__form‐field" for="impressions2">Скорее отрицательное</label>
+
+            <input class="field‐radiogroup__input" type="radio" name="impressions" id="impressions3" value="difficult">
+            <label class="field‐radiogroup contact‐form__form‐field" for="impressions3">Затрудняюсь ответить</label>
+
           </section>
 
           <section class="contact‐form__visits">
+
             <h2 class="contact‐form__section-title">Посещенные достопримечательности:</h2>
-            <label class="field‐checkbox contact‐form__form‐field">
-              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Мост Дьявола"> Мост Дьявола
-            </label>
-            <label class="field‐checkbox contact‐form__form‐field">
-              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Слайд-парк"> Слайд-парк
-            </label>
-            <label class="field‐checkbox contact‐form__form‐field">
-              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Гора-Колокол"> Гора-Колокол
-            </label>
-            <label class="field‐checkbox contact‐form__form‐field">
-              <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Красные скалы"> Красные скалы
-            </label>
+
+            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Мост Дьявола" id="visits1">
+            <label class="field‐checkbox contact‐form__form‐field" for="visits1">Мост Дьявола</label>
+
+            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Слайд-парк" id="visits2">
+            <label class="field‐checkbox contact‐form__form‐field" id="visits2">Слайд-парк</label>
+
+            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Гора-Колокол" id="visits3">
+            <label class="field‐checkbox contact‐form__form‐field" id="visits3">Гора-Колокол</label>
+
+            <input class="field‐checkbox__input" type="checkbox" name="visits[]" value="Красные скалы" id="visits4">
+            <label class="field‐checkbox contact‐form__form‐field" id="visits4">Красные скалы</label>
+
           </section>
 
           <section class="contact‐form__emotions">
@@ -91,7 +95,7 @@
             </label>
           </section>
 
-          <button class="contact‐form__action__btn btn btn-lg" type="submit">Отправить отзыв</button>
+          <button class="contact‐form__action__btn btn btn--lg" type="submit">Отправить отзыв</button>
 
           <p class="contact‐form__legend"><sup>*</sup> — обязательные поля</p>
 
