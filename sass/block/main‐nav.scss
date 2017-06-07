@@ -1,0 +1,56 @@
+.main-nav {
+
+  min-height: 223px; /* временно для сетки */
+
+  position: relative;
+
+}
+
+.main‐nav__toggler {
+
+  display: block;
+
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  width: 23px;
+  height: 22px;
+
+}
+
+.main‐nav__list {
+
+  min-height: 223px; /* Временно для сетки */
+
+  margin: 0;
+  padding: 0;
+
+}
+
+@media #{$tablet-widths} {
+
+  .main-nav {
+
+    min-height: 57px;
+    height: 57px;
+
+  }
+
+  .main‐nav__toggler {
+
+    display: none;
+
+  }
+
+  .main‐nav__list {
+
+    min-height: 57px;
+    height: 57px;
+
+    margin: 0;
+    padding: 0;
+
+  }
+
+}

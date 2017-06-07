@@ -1,0 +1,23 @@
+// файл style.scss SASS
+@import "variables.scss";
+@import "global/outlines.scss";
+@import "mixins.scss";
+@import "global/fonts.scss";
+@import "global/forms.scss";
+@import "global/type.scss";
+
+@import "block/page-header.scss";
+@import "block/main‐nav.scss";
+
+@import "block/page-content.scss";
+@import "block/page-header.scss";
+@import "block/reasons.scss";
+@import "block/reason.scss";
+
+@import "block/reservation.scss";
+
+@import "block/map.scss";
+
+@import "block/page‐footer.scss";
+@import "block/social‐links.scss";
+@import "block/social‐link.scss";
