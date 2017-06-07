@@ -1,0 +1,51 @@
+.page-content {
+
+  @include container();
+
+  min-height: 2062px; /* временно для сетки */
+
+  padding-top: 45px;
+
+}
+
+@media #{$tablet-widths} {
+
+  .page-content {
+
+    min-height: 1305px; /* временно для сетки */
+    height: 1305px; /* временно для сетки */
+
+    padding-top: 55px;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+/* Настройки скриншота-подложки для сетки */
+
+body {
+  min-height: 2730px;
+}
+
+.block-mock {
+  height: 668px;
+}
+
+@media #{$tablet-widths} {
+
+  body {
+    min-height: 2666px;
+  }
+
+  .block-mock {
+    height: 575px;
+  }
+
+}

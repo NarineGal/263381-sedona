@@ -1,0 +1,91 @@
+.reservation {
+
+  @include container();
+
+  min-height: 287px;  /* временно для сетки */
+  height: 287px;      /* временно для сетки */
+
+  padding: 33px 20px 49px;
+
+}
+
+.reservation__title {
+
+  margin-bottom: 32px;
+
+}
+.reservation__descr {
+
+  margin-bottom: 41px;
+
+}
+
+.reservation__btn {
+  display: block;
+}
+
+@media #{$tablet-widths} {
+
+  .reservation {
+
+    min-height: 318px;  /* временно для сетки */
+    height: 318px;      /* временно для сетки */
+
+    padding: 58px 156px 58px;
+
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .reservation {
+
+    min-height: 332px;  /* временно для сетки */
+    height: 332px;      /* временно для сетки */
+
+    padding: 58px 371px 66px;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* Настройки скриншота-подложки для сетки */
+
+body {
+  min-height: 3117px; /*+100px*/
+}
+
+.block-mock {
+  height: 2730px;
+}
+
+
+
+@media #{$tablet-widths} {
+
+  body {
+    min-height: 2296px; /*+100px*/
+  }
+
+  .block-mock {
+    height: 1878px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  body {
+    min-height: 2310px; /*+100px*/
+  }
+
+}

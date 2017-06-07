@@ -1,0 +1,52 @@
+.map {
+
+  width: 100%;
+
+  min-height: 351px;  /* временно для сетки */
+  height: 351px;      /* временно для сетки */
+
+}
+
+  /* Настройки скриншота-подложки для сетки */
+
+body {
+  min-height: 3467px; /*+100px*/
+}
+
+.block-mock {
+  height: 3017px;
+}
+
+@media #{$tablet-widths} {
+
+  .map {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  body {
+    min-height: 2647px; /*+100px*/
+  }
+
+  .block-mock {
+    height: 2196px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .map {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  body {
+    min-height: 2660px; /*+100px*/
+  }
+
+  .block-mock {
+    height: 2210px;
+  }
+
+}

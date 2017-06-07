@@ -1,0 +1,48 @@
+.reasons {
+
+}
+
+.reasons_header {
+
+  min-height: 194px; /* временно для сетки */
+  height: 194px; /* временно для сетки */
+
+}
+
+.reasons__title {
+
+  margin-bottom: 40px;
+  padding: 0px 20px;
+
+}
+
+.reasons__descr {
+
+  margin-bottom: 34px;
+  padding: 0px 20px;
+
+}
+
+@media #{$tablet-widths} {
+
+  .reasons_header {
+
+    min-height: 151px; /* временно для сетки */
+    height: 151px; /* временно для сетки */
+
+  }
+
+  .reasons__title {
+
+    margin-bottom: 40px;
+
+  }
+
+  .reasons__descr {
+
+    margin-bottom: 58px;
+
+  }
+
+
+}
