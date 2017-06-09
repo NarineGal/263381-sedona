@@ -7,6 +7,7 @@
 @import "global/forms.scss";
 @import "global/type.scss";
 
+//index
 @import "block/page-header.scss";
 @import "block/main‐nav.scss";
 
@@ -22,3 +23,12 @@
 @import "block/page‐footer.scss";
 @import "block/social‐links.scss";
 @import "block/social‐link.scss";
+
+//photo-video
+@import "block/photo-video.scss";
+@import "block/photos.scss";
+@import "block/video.scss";
+
+//form
+@import "block/review.scss";
+@import "block/contact‐form.scss";

@@ -2,7 +2,6 @@
 
   @include container();
 
-  min-height: 287px;  /* временно для сетки */
   height: 287px;      /* временно для сетки */
 
   padding: 33px 20px 49px;
@@ -11,17 +10,24 @@
 
 .reservation__title {
 
-  margin-bottom: 32px;
+  height: 15px;      /* временно для сетки */
+  margin: 0 0 32px;
+  padding: 0;
 
 }
 .reservation__descr {
 
-  margin-bottom: 41px;
+  height: 58px;      /* временно для сетки */
+  margin: 0 0 42px;
+  padding: 0;
 
 }
 
 .reservation__btn {
+
   display: block;
+  height: 58px;      /* временно для сетки */
+
 }
 
 @media #{$tablet-widths} {
@@ -46,46 +52,6 @@
 
     padding: 58px 371px 66px;
 
-  }
-
-}
-
-
-
-
-
-
-
-
-
-/* Настройки скриншота-подложки для сетки */
-
-body {
-  min-height: 3117px; /*+100px*/
-}
-
-.block-mock {
-  height: 2730px;
-}
-
-
-
-@media #{$tablet-widths} {
-
-  body {
-    min-height: 2296px; /*+100px*/
-  }
-
-  .block-mock {
-    height: 1878px;
-  }
-
-}
-
-@media #{$desktop-widths} {
-
-  body {
-    min-height: 2310px; /*+100px*/
   }
 
 }

@@ -2,11 +2,30 @@
 
   @include container();
 
-  min-height: 668px; /* временно для сетки */
+  min-height: 575px; /* временно для сетки */
+
+}
+
+.page-header--inner {
+
+  @include container();
+
+  min-height: 437px; /* временно для сетки */
 
 }
 
 .page-header__logo {
+
+  height: 445px;
+
+  margin-top: 0;
+
+  text-align: center;
+}
+
+.page-header--inner .page-header__logo {
+
+  height: 214px;
 
   margin-top: 0;
 
@@ -22,8 +41,23 @@
 
   }
 
+  .page-header--inner {
+
+    min-height: 347px; /* временно для сетки */
+    height: 347px;
+
+  }
+
   .page-header__logo {
 
+    height: 575px;
+    margin-top: -57px;
+
+  }
+
+  .page-header--inner .page-header__logo {
+
+    height: 347px;
     margin-top: -57px;
 
   }
