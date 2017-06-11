@@ -86,3 +86,7 @@ body > * > * > * > * > *::before {
 .block-mock::before {
   display: none;
 }
+
+.borderer {
+  outline: 1px solid red;
+}

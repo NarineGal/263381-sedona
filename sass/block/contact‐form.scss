@@ -151,12 +151,20 @@
 
   .contact‐form__action {
 
+    display: block;
+
     height: 119px;   /*Tmp*/
     width: 100%;
     margin: 0;
     padding: 0;
 
     order: 6;
+
+  }
+
+  .contact‐form__legend {
+
+    order: 7;
 
   }
 
