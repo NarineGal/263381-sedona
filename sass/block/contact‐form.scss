@@ -1,0 +1,230 @@
+.contact‐form {
+
+  display: block;
+  margin: 0;
+  padding: 0;
+
+}
+.contact‐form__reviewer {
+
+  height: 306px;   /*Tmp*/
+
+  margin: 0;
+  padding: 25px 20px 25px;
+
+  border-top: 1px solid #e5e5e5;
+
+}
+
+.contact‐form__contacts {
+
+  height: 288px;   /*Tmp*/
+
+  margin: 0;
+  padding: 25px 20px 25px;
+
+  border-top: 1px solid #e5e5e5;
+
+}
+
+.contact‐form__impressions {
+
+  height: 289px;   /*Tmp*/
+
+  margin: 0;
+  padding: 25px 20px 25px;
+
+  border-top: 1px solid #e5e5e5;
+
+}
+
+.contact‐form__visits {
+
+  height: 410px;   /*Tmp*/
+
+  margin: 0;
+  padding: 25px 20px 25px;
+
+  border-top: 1px solid #e5e5e5;
+
+}
+
+.contact‐form__emotions {
+
+  height: 272px;   /*Tmp*/
+
+  margin: 0;
+  padding: 25px 20px 25px;
+
+  border-top: 1px solid #e5e5e5;
+
+}
+
+.contact‐form__action {
+
+  width: 100%;
+  height: 81px;   /*Tmp*/
+
+  margin: 0;
+  padding: 0px 20px 25px;
+
+}
+
+.contact‐form__section-title {
+
+  height: 41px;   /*Tmp*/
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 28px;
+
+  text-align: center;
+
+}
+
+@media #{$tablet-widths} {
+
+  .contact‐form {
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      padding: 0 60px;
+
+  }
+
+  .contact‐form__reviewer {
+
+    height: 368px;   /*Tmp*/
+    width: 50%;
+    margin: 0;
+    padding: 0;
+
+    order: 2;
+
+  }
+
+  .contact‐form__contacts {
+
+    height: 308px;   /*Tmp*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    order: 3;
+
+  }
+
+  .contact‐form__impressions {
+
+    height: 368px;   /*Tmp*/
+    width: 50%;
+    margin: 0;
+    padding: 0;
+
+    order: 1;
+
+  }
+
+  .contact‐form__visits {
+
+    height: 306px;   /*Tmp*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    order: 4;
+
+  }
+
+  .contact‐form__emotions {
+
+    height: 297px;   /*Tmp*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    order: 5;
+
+  }
+
+  .contact‐form__action {
+
+    display: block;
+
+    height: 119px;   /*Tmp*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    order: 6;
+
+  }
+
+  .contact‐form__legend {
+
+    order: 7;
+
+  }
+
+  .contact‐form__section-title {
+
+    height: 16px;   /*Tmp*/
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 14px;
+
+    text-align: center;
+
+  }
+
+
+}
+
+@media #{$desktop-widths} {
+
+  .contact‐form {
+
+      padding: 0 120px;
+
+  }
+
+  .contact‐form__reviewer {
+
+    height: 365px;   /*Tmp*/
+
+  }
+
+  .contact‐form__contacts {
+
+    height: 213px;   /*Tmp*/
+
+  }
+
+  .contact‐form__impressions {
+
+    height: 365px;   /*Tmp*/
+
+  }
+
+  .contact‐form__visits {
+
+    height: 215px;   /*Tmp*/
+
+  }
+
+  .contact‐form__emotions {
+
+    height: 296px;   /*Tmp*/
+
+  }
+
+  .contact‐form__action {
+
+    height: 119px;   /*Tmp*/
+
+  }
+
+}
