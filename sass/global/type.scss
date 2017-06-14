@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'PT Sans';
+   src: url('../fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/ptsans.woff') format('woff');   /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'PT Sans Bold';
+   src: url('../fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/ptsansbold.woff') format('woff');   /* Pretty Modern Browsers */
+}
+
 body {
 
   margin: 0;
@@ -8,9 +21,9 @@ body {
 
   min-width: 320px;
 
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
-  font-family: Arial, sans-serif;
   color: $text-color;
   font-style: normal;
 
