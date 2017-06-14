@@ -1,36 +1,83 @@
-.page-header {
-
-  min-height: 575px; /* временно для сетки */
-
-}
-
-.page-header--inner {
-
-  min-height: 437px; /* временно для сетки */
-
-}
-
 .page-header__logo {
 
-  height: 445px;
+  position: relative;
+
+  height: 83px;
 
   margin-top: 0;
   padding: 0;
 
   text-align: center;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
+  z-index: 10;
+
+  &::before {
+
+    content: "";
+    height: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+
+    z-index: -1;
+  }
+
+
 }
 
-.page-header--inner .page-header__logo {
+.page-header__promo {
 
-  height: 214px;
+  height: 389px;
 
-  margin-top: 0;
+  margin-top: -27px;
+  padding: 0;
 
   text-align: center;
+
+  background-color: #6d879c;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='26'><polygon points='0 0, 0 26, 160 26' fill='#ffffff'/><polygon points='160 26, 320 26, 320 0' fill='#ffffff' /></svg>"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: center bottom, center top;
+  background-size: 320px cover;
+}
+
+.page-header__promo-text {
+
+  width: 280px;
+  height: 213px;
+  margin-top: 88px;
+
+}
+
+.page-header--inner .page-header__promo {
+
+  height: 159px;
+
+  margin-top: -27px;
+  padding: 0;
+
+  text-align: center;
+
+  background-color: #6d879c;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='26'><polygon points='0 0, 0 26, 160 26' fill='#ffffff'/><polygon points='160 26, 320 26, 320 0' fill='#ffffff' /></svg>"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: center bottom, center center;
+  background-size: 320px cover;
+
+}
+
+.page-header--inner .page-header__promo-text {
+
+  width: 227px;
+  height: 39px;
+  margin-top: 60px;
+
 }
 
 @media #{$tablet-widths} {

@@ -1,0 +1,67 @@
+.social‐link {
+
+  width: 46px;
+  height: 48px;
+
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+}
+
+
+
+.social‐link‐-fb {
+
+  $icon-svg: svg-size($icon-facebook, 9, 19);
+
+
+  background: $btn-bg-color url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color)}') no-repeat 50% 50%;
+
+  &:hover {
+    background: $btn-bg-color-hover url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color-hover)}') no-repeat 50% 50%;
+  }
+
+  &:active {
+    background: $btn-bg-color-active url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color-active)}') no-repeat 50% 50%;
+  }
+
+}
+
+.social‐link‐-tw {
+
+  $icon-svg: svg-size($icon-twitter, 18, 15);
+
+  background: $btn-bg-color url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color)}') no-repeat 50% 50%;
+
+  &:hover {
+    background: $btn-bg-color-hover url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color-hover)}') no-repeat 50% 50%;
+  }
+
+  &:active {
+    background: $btn-bg-color-active url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color-active)}') no-repeat 50% 50%;
+  }
+
+}
+
+.social‐link‐-yt {
+
+  $icon-svg: svg-size($icon-youtube, 20, 14);
+
+  background: $btn-bg-color url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color)}') no-repeat 50% 50%;
+
+  &:hover {
+    background: $btn-bg-color-hover url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color-hover)}') no-repeat 50% 50%;
+  }
+
+  &:active {
+    background: $btn-bg-color-active url('data:image/svg+xml;utf8,#{svg-fill($icon-svg, $btn-txt-color-active)}') no-repeat 50% 50%;
+  }
+
+}
