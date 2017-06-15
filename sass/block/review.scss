@@ -4,65 +4,24 @@
 
 .review__title {
 
-  height: 53px;   /*Tmp*/
-  margin: 0;
-  padding: 0 20px 40px;
+  margin: 0 0 40px;
+  padding: 0 20px 0;
 
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
   text-align: center;
 
 }
 
 .review__descr {
 
-  height: 106px;   /*Tmp*/
-  margin: 0;
-  padding: 0 20px 24px;
+  margin: 0 0 23px;
+  padding: 0 20px 0;
 
-}
-
-
-@media #{$tablet-widths} {
-
-  .review {
-
-  }
-
-  .review__title {
-
-    height: 61px;   /*Tmp*/
-    margin: 0;
-    padding: 0 60px 40px;
-
-    text-align: center;
-
-  }
-
-  .review__descr {
-
-    height: 122px;   /*Tmp*/
-    margin: 0;
-    padding: 0 60px 86px;
-
-    text-align: center;
-
-  }
-
-}
-
-@media #{$desktop-widths} {
-
-  .review__title {
-
-    height: 62px;   /*Tmp*/
-    padding: 0 120px 40px;
-
-  }
-
-  .review__descr {
-
-    height: 105px;   /*Tmp*/
-    padding: 0 120px 71px;
-
-  }
-
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
 }

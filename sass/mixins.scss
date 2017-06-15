@@ -40,7 +40,8 @@
 }
 
 @function svg-fill ($svg, $color) {
-  @return str-replace($svg, '<svg', '<svg fill="#{$color}"');
+  $tmp: str-replace($svg, '<svg', '<svg fill="#{$color}"');
+  @return str-replace($tmp, '<svg fill="#', '<svg fill="%23');
 }
 
 @function svg-size ($svg, $width, $height) {

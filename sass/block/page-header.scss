@@ -35,14 +35,27 @@
   padding: 0;
 
   text-align: center;
+/*
+with utf8
 
+    url("data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' width='320' height='26'>
+          <polygon points='0 0, 0 26, 160 26' fill='%23ffffff'/>
+          <polygon points='160 26, 320 26, 320 0' fill='%23ffffff' />
+        </svg>"),
+
+with base64
+    url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
+
+
+*/
   background-color: #6d879c;
   background-image:
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='26'><polygon points='0 0, 0 26, 160 26' fill='#ffffff'/><polygon points='160 26, 320 26, 320 0' fill='#ffffff' /></svg>"),
+    url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat no-repeat;
   background-position: center bottom, center top;
-  background-size: 320px cover;
+  background-size: 320px, cover;
 }
 
 .page-header__promo-text {
@@ -64,11 +77,11 @@
 
   background-color: #6d879c;
   background-image:
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='26'><polygon points='0 0, 0 26, 160 26' fill='#ffffff'/><polygon points='160 26, 320 26, 320 0' fill='#ffffff' /></svg>"),
+    url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat no-repeat;
   background-position: center bottom, center center;
-  background-size: 320px cover;
+  background-size: 320px, auto;
 
 }
 

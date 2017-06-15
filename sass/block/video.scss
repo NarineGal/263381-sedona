@@ -1,77 +1,152 @@
 .video {
 
-  height: 488px;      /*Tmp*/
-  padding-top: 39px;
-  padding-bottom: 57px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 
 }
 
 .video__title {
 
-  height: 16px;   /*Tmp*/
+  margin: 0 0 40px;
+  padding: 0 20px;
 
-  margin:  0 0 40px;
-  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
 
 }
 
 .video__descr {
 
-  height: 56px;   /*Tmp*/
+  margin: 0 0 40px;
+  padding: 0 20px;
 
-  margin-bottom: 36px;
-  padding: 0px 20px;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
 
 }
 
 .video__content {
 
-  height: 270px;   /*Tmp*/
+  position: relative;
+
+  height: 266px;
 
 }
 
-@media #{$tablet-widths} {
+.video__controls {
 
-  .video {
+  position: absolute;
+  left: 20px;
+  bottom: 0px;
 
-    height: 784px;      /*Tmp*/
-    padding: 69px 60px 57px;
+  width: 280px;
+  height: 110px;
 
-  }
+  background: linear-gradient( to bottom, rgba(0, 0, 0, .65) 45px, #b2b2b2 45px, #b2b2b2 110px ) no-repeat 0 0;
 
-  .video__title {
+  &::before {
 
-    height: 20px;   /*Tmp*/
+    content: "";
 
-    margin:  0 0 40px;
-    padding: 0px 20px;
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    top: 22px;
 
-  }
+    height: 3px;
 
-  .video__descr {
-
-    height: 38px;   /*Tmp*/
-
-    margin-bottom: 76px;
-    padding: 0px 20px;
-
-  }
-
-  .video__content {
-
-    height: 500px;   /*Tmp*/
-
+    background-color: rgba(255,255,255,0.5);
   }
 
 }
 
-@media #{$desktop-widths} {
+.video__control {
 
-  .video {
+  position: absolute;
+  bottom: 24px;
+  z-index: 20;
 
-    height: 830px;      /*Tmp*/
-    padding: 71px 200px 85px;
+  display: block;
 
+  height: 20px;
+  font-size: 0px;
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+.video__control--replay {
+
+  width: 16px;
+  left: 25px;
+  background-size: 16px 20px;
+
+  background-image: url('data:image/svg+xml;base64,#{str-replace($icon-replay, "MDAwMDAw", "NWM2ODcw")}');
+
+  &:hover {
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-replay, "MDAwMDAw", "MzMzMzMz")}');
   }
+
+  &:active {
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-replay, "MDAwMDAw", "YzFjMWMx")}');
+  }
+
+}
+
+.video__control--subtitles {
+
+  width: 32px;
+  left: 174px;
+  background-size: 32px 20px;
+
+  background-image: url('data:image/svg+xml;base64,#{str-replace($icon-subtitles, "MDAwMDAw", "NWM2ODcw")}');
+
+  &:hover {
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-subtitles, "MDAwMDAw", "MzMzMzMz")}');
+  }
+
+  &:active {
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-subtitles, "MDAwMDAw", "YzFjMWMx")}');
+  }
+
+}
+
+.video__control--fullscreen {
+
+  width: 20px;
+  right: 25px;
+  background-size: 20px 20px;
+
+  background-image: url('data:image/svg+xml;base64,#{str-replace($icon-fullscreen, "MDAwMDAw", "NWM2ODcw")}');
+
+  &:hover {
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-fullscreen, "MDAwMDAw", "MzMzMzMz")}');
+  }
+
+  &:active {
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-fullscreen, "MDAwMDAw", "YzFjMWMx")}');
+  }
+
+}
+
+.video__control--current {
+
+  width: 10px;
+  height: 10px;
+  top: 19px;
+  left: 65px;
+  background-size: 10px 10px;
+  background-image: url('data:image/svg+xml;base64,#{str-replace($icon-current, "MDAwMDAw", "ZmZmZmZm")}');
 
 }

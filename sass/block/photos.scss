@@ -1,6 +1,6 @@
 .photos {
 
-  padding: 0 20px;
+  border-top: 1px solid #e5e5e5;
 
 }
 
@@ -13,73 +13,71 @@
 
 .photos__list {
 
-  display: block;
-  margin: 0;
   padding: 0;
 
 }
 
 .photos__item {
 
-  height: 415px; /*Временно*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  border-bottom: 1px solid #e5e5e5;
 
 }
 
-@media #{$tablet-widths} {
+.photos__pic {
 
-  .photos {
+  margin: 20px;
+  padding: 0;
 
-    padding: 0 60px;
+  & img {
 
-  }
-
-  .photos__list {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-
-  }
-
-  .photos__item {
-
-    width: 50%;
-    height: 348px; /*Временно*/
-
-  }
-
-  .photos__item:first-child {
-
-    width: 100%;
-    height: 480px; /*Временно*/
+    display: block;
 
   }
 
 }
 
-@media #{$desktop-widths} {
+.photos__info {
 
-  .photos {
+  margin: 0 20px 20px;
+  padding: 0;
 
-    min-height: 668px; /*Временно*/
-    padding: 0;
+}
 
-  }
+.photos__info-title {
 
-  .photos__item {
+  margin: 0;
+  padding: 0;
 
-    width: 400px;
-    height: 268px; /*Временно*/
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
 
-  }
+}
 
-  .photos__item:first-child {
+.photos__author {
 
-    width: 100%;
-    height: 403px; /*Временно*/
+  display: block;
 
-  }
+  font-size: 14px;
+  line-height: 24px;
+
+}
+
+.photos__likes {
+
+  display: block;
+  height: 24px;
+  padding: 0 0 0 37px;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  $icon-svg: svg-size($icon-like, 22, 20);
+  background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "YjJiMmIy")}') no-repeat left center;
 
 }

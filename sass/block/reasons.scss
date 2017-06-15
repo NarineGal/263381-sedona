@@ -7,8 +7,21 @@
   margin: 0;
   padding: 0px 25px 44px;
 
+/*
+with base64
+url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScwIDAsIDAgMjYsIDE2MCAyNicgZmlsbD0nIzgxYjNkMicvPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScxNjAgMjYsIDMyMCAyNiwgMzIwIDAnIGZpbGw9JyM4MWIzZDInLz4NCiAgICA8L3N2Zz4=")
+
+with utf8
+url("data:image/svg+xml;utf8,
+    <svg xmlns='http://www.w3.org/2000/svg' width='320' height='26'>
+      <polygon points='0 0, 0 26, 160 26' fill='%2381b3d2'/>
+      <polygon points='160 26, 320 26, 320 0' fill='%2381b3d2'/>
+    </svg>")
+
+*/
+
   background-color: #ffffff;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='26'><polygon points='0 0, 0 26, 160 26' fill='#81b3d2'/><polygon points='160 26, 320 26, 320 0' fill='#81b3d2'/></svg>");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScwIDAsIDAgMjYsIDE2MCAyNicgZmlsbD0nIzgxYjNkMicvPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScxNjAgMjYsIDMyMCAyNiwgMzIwIDAnIGZpbGw9JyM4MWIzZDInLz4NCiAgICA8L3N2Zz4=");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 320px;
@@ -20,7 +33,6 @@
   margin-bottom: 26px;
   padding: 0;
 
-  font-family: 'PT Sans Bold', Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
