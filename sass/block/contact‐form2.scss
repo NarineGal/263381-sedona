@@ -12,9 +12,23 @@
   .contact‐form__impressions {
     order: 1;
 
-    width: 378px;
+    position: relative;
+
+    width: 324px;
     border-top: none;
     padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 75px;
+      background: transparent;
+      z-index: 400;
+      border-right: 1px solid #dbdbdb;
+    }
 
     .contact‐form__set {
       height: 215px;
@@ -32,6 +46,7 @@
     order: 2;
 
     width: 270px;
+    margin-left: 54px;
     border-top: none;
     padding: 0;
 
