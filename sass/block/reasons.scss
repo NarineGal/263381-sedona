@@ -57,22 +57,37 @@ url("data:image/svg+xml;utf8,
 
   .reasons_header {
 
-    min-height: 151px; /* временно для сетки */
-    height: 151px; /* временно для сетки */
+    padding: 0px 130px 58px;
+    background-image: none;
 
   }
 
   .reasons__title {
 
-    margin-bottom: 40px;
+    margin: 0 0 40px;
+    padding: 0;
+
+    font-size: 21px;
 
   }
 
-  .reasons__descr {
+}
 
-    margin-bottom: 58px;
+@media #{$desktop-widths} {
+
+  .reasons_header {
+
+    padding: 0px 350px 58px;
 
   }
 
+  .reasons__title {
+
+    margin: 0 0 40px;
+    padding: 0;
+
+    font-size: 21px;
+
+  }
 
 }

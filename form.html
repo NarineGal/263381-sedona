@@ -49,23 +49,29 @@
 
           <form class="contact‐form" action="https://echo.htmlacademy.ru/" method="post">
 
+            <button class="visually-hidden" type="submit" id="xxx"></button>
+
             <section class="contact‐form__reviewer">
 
               <h2 class="contact‐form__section-title">Представьтесь:</h2>
 
-              <div class="contact‐form__group">
-                <label class="contact‐form__label">Имя<sup>*</sup>: </label  for="firstname">
-                <input class="contact‐form__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
-              </div>
+              <div class="contact‐form__set">
 
-              <div class="contact‐form__group">
-                <label class="contact‐form__label">Фамилия<sup>*</sup>: </label  for="lastname">
-                <input class="contact‐form__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
-              </div>
+                <div class="contact‐form__group">
+                  <label class="contact‐form__label">Имя<sup>*</sup>: </label  for="firstname">
+                  <input class="contact‐form__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
+                </div>
 
-              <div class="contact‐form__group">
-                <label class="contact‐form__label">Отчество: </label  for="middlename">
-                <input class="contact‐form__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
+                <div class="contact‐form__group">
+                  <label class="contact‐form__label">Фамилия<sup>*</sup>: </label  for="lastname">
+                  <input class="contact‐form__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
+                </div>
+
+                <div class="contact‐form__group">
+                  <label class="contact‐form__label">Отчество: </label  for="middlename">
+                  <input class="contact‐form__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
+                </div>
+
               </div>
 
             </section>
@@ -74,18 +80,33 @@
 
               <h2 class="contact‐form__section-title">Контактная информация:</h2>
 
-              <label class="contact‐form__labeldiv">Контактный телефон<sup>*</sup>: </label  for="phone">
+              <div class="contact‐form__set">
 
-              <div class="contact‐form__group">
-                <input class="contact‐form__input" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{5}">
-                <span class="contact‐form__icon-phone"></span>
-              </div>
+                <div class="contact‐form__rowgroup">
 
-              <label class="contact‐form__labeldiv">Электронная почта<sup>*</sup>: </label  for="email">
+                  <label class="contact‐form__rowlabel"><span>Контактный</span> телефон<sup>*</sup>: </label  for="phone">
 
-              <div class="contact‐form__group">
-                <input class="contact‐form__input" type="email" placeholder="Введите e-mail" name="email" id="email" required>
-                <span class="contact‐form__icon-email"></span>
+                  <div class="contact‐form__inputgroup">
+
+                    <input class="contact‐form__input" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" required pattern="[0-9]{3}-[0-9]{5}">
+                    <span class="contact‐form__icon-phone"></span>
+
+                  </div>
+
+                </div>
+
+                <div class="contact‐form__rowgroup">
+
+                  <label class="contact‐form__rowlabel">Электронная почта<sup>*</sup>: </label  for="email">
+
+                  <div class="contact‐form__inputgroup">
+
+                    <input class="contact‐form__input contact‐form__input--icon-email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+                    <span class="contact‐form__icon-email"></span>
+                  </div>
+
+                </div>
+
               </div>
 
             </section>
@@ -94,24 +115,30 @@
 
               <h2 class="contact‐form__section-title">Ваше общее впечатление:</h2>
 
-              <div class="contact‐form__emulation">
+              <div class="contact‐form__set">
 
-                <input class="contact‐form__radio" type="radio" name="impressions" id="impressions1" value="negative">
-                <label class="contact‐form__label-emulation-rb" for="impressions1">Скорее положительное</label>
+                <div class="contact‐form__emulation">
+
+                  <input class="contact‐form__radio" type="radio" name="impressions" id="impressions1" value="negative">
+                  <label class="contact‐form__label-emulation-rb" for="impressions1">Скорее положительное</label>
+
+                </div>
+
+                <div class="contact‐form__emulation">
+
+                  <input class="contact‐form__radio" type="radio" name="impressions" id="impressions2" value="negative">
+                  <label class="contact‐form__label-emulation-rb" for="impressions2">Скорее отрицательное</label>
+
+                </div>
+
+                <div class="contact‐form__emulation">
+
+                  <input class="contact‐form__radio" type="radio" name="impressions" id="impressions3" value="difficult">
+                  <label class="contact‐form__label-emulation-rb" for="impressions3">Затрудняюсь ответить</label>
+
+                </div>
 
               </div>
-
-              <div class="contact‐form__emulation">
-
-                <input class="contact‐form__radio" type="radio" name="impressions" id="impressions2" value="negative">
-                <label class="contact‐form__label-emulation-rb" for="impressions2">Скорее отрицательное</label>
-
-              </div>
-
-              <div class="contact‐form__emulation">
-
-                <input class="contact‐form__radio" type="radio" name="impressions" id="impressions3" value="difficult">
-                <label class="contact‐form__label-emulation-rb" for="impressions3">Затрудняюсь ответить</label>
 
             </section>
 
@@ -119,31 +146,35 @@
 
               <h2 class="contact‐form__section-title">Посещенные достопримечательности:</h2>
 
-              <div class="contact‐form__emulation">
+              <div class="contact‐form__set">
 
-                <input class="contact‐form__check" type="checkbox" name="visits[]" value="Мост Дьявола" id="visits1">
-                <label class="contact‐form__label-emulation-chb" for="visits1">Мост Дьявола</label>
+                <div class="contact‐form__emulation">
 
-              </div>
+                  <input class="contact‐form__check" type="checkbox" name="visits[]" value="Мост Дьявола" id="visits1">
+                  <label class="contact‐form__label-emulation-chb" for="visits1">Мост Дьявола</label>
 
-              <div class="contact‐form__emulation">
+                </div>
 
-                <input class="contact‐form__check" type="checkbox" name="visits[]" value="Слайд-парк" id="visits2">
-                <label class="contact‐form__label-emulation-chb" for="visits2">Слайд-парк</label>
+                <div class="contact‐form__emulation">
 
-              </div>
+                  <input class="contact‐form__check" type="checkbox" name="visits[]" value="Слайд-парк" id="visits2">
+                  <label class="contact‐form__label-emulation-chb" for="visits2">Слайд-парк</label>
 
-              <div class="contact‐form__emulation">
+                </div>
 
-                <input class="contact‐form__check" type="checkbox" name="visits[]" value="Гора-Колокол" id="visits3">
-                <label class="contact‐form__label-emulation-chb" for="visits3">Гора-Колокол</label>
+                <div class="contact‐form__emulation">
 
-              </div>
+                  <input class="contact‐form__check" type="checkbox" name="visits[]" value="Гора-Колокол" id="visits3">
+                  <label class="contact‐form__label-emulation-chb" for="visits3">Гора-Колокол</label>
 
-              <div class="contact‐form__emulation">
+                </div>
 
-                <input class="contact‐form__check" type="checkbox" name="visits[]" value="Красные скалы" id="visits4">
-                <label class="contact‐form__label-emulation-chb" for="visits4">Красные скалы</label>
+                <div class="contact‐form__emulation">
+
+                  <input class="contact‐form__check" type="checkbox" name="visits[]" value="Красные скалы" id="visits4">
+                  <label class="contact‐form__label-emulation-chb" for="visits4">Красные скалы</label>
+
+                </div>
 
               </div>
 
@@ -153,13 +184,17 @@
 
               <h2 class="contact‐form__section-title">Опишите свои эмоции:</h2>
 
-              <textarea name="emotions" class="contact‐form__textarea">Опишите подробно все свои восторги</textarea>
+              <div class="contact‐form__set">
+
+                <textarea name="emotions" class="contact‐form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+
+              </div>
 
             </section>
 
-            <button class="contact‐form__action btn" type="submit">Отправить отзыв</button>
+            <button class="contact‐form__action btn" type="button" onclick="step1();">Отправить отзыв</button>
 
-            <p class="contact‐form__legend"><sup>*</sup> — обязательные поля</p>
+            <p class="contact‐form__legend">* - обязательные поля</p>
 
           </form>
 
@@ -181,6 +216,24 @@
       </footer>
 
     </div>
+
+    <aside class="contact‐form__popup-error contact‐form__popup--closed">
+
+      <h1 class="contact‐form__popup-title">Что-то пошел не так!</h1>
+      <p class="contact‐form__popup-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+      <button class="contact‐form__popup-action btn" type="button" onclick="step2();">Ok</button>
+
+    </aside>
+
+    <aside class="contact‐form__popup-ok contact‐form__popup--closed">
+
+      <h1 class="contact‐form__popup-title">Ваш отзыв отправлен!</h1>
+      <p class="contact‐form__popup-message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+
+      <button class="contact‐form__action btn btn-special" type="button" onclick="step3();">Закрыть окно</button>
+
+    </aside>
 
     <script src="js/scrtips.js"></script>
 

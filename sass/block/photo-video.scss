@@ -1,5 +1,4 @@
 .photo-video {
-
 }
 
 .photo-video__title {
@@ -24,5 +23,49 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+}
+
+@media #{$tablet-widths} {
+
+  .photo-video {
+
+    padding: 0 50px;
+
+  }
+
+  .photo-video__title {
+
+    margin-bottom: 40px;
+    padding: 0 58px;
+
+    font-size: 30px;
+
+  }
+
+  .photo-video__descr {
+
+    margin: 0 0 77px;
+    padding: 0 58px;
+
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .photo-video {
+
+    padding: 0;
+
+  }
+
+  .photo-video__title {
+    padding: 0 380px;
+  }
+
+  .photo-video__descr {
+    padding: 0 380px;
+  }
 
 }

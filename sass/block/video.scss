@@ -34,7 +34,11 @@
 
   position: relative;
 
+  width: 320px;
   height: 266px;
+
+  background:transparent url('../img/video-mobile@1x.jpg') no-repeat 0 0;
+  background-size: cover;
 
 }
 
@@ -42,9 +46,9 @@
 
   position: absolute;
   left: 20px;
-  bottom: 0px;
+  right: 20px;
+  bottom: -65px;
 
-  width: 280px;
   height: 110px;
 
   background: linear-gradient( to bottom, rgba(0, 0, 0, .65) 45px, #b2b2b2 45px, #b2b2b2 110px ) no-repeat 0 0;
@@ -107,7 +111,7 @@
 .video__control--subtitles {
 
   width: 32px;
-  left: 174px;
+  right: 75px;
   background-size: 32px 20px;
 
   background-image: url('data:image/svg+xml;base64,#{str-replace($icon-subtitles, "MDAwMDAw", "NWM2ODcw")}');
@@ -148,5 +152,102 @@
   left: 65px;
   background-size: 10px 10px;
   background-image: url('data:image/svg+xml;base64,#{str-replace($icon-current, "MDAwMDAw", "ZmZmZmZm")}');
+
+}
+
+
+
+@media #{$tablet-widths} {
+
+  .video {
+    padding: 68px 0px 100px;
+  }
+
+  .video__title {
+    margin: 0 0 38px;
+    font-size: 30px;
+  }
+
+  .video__descr {
+    margin: 0 0 78px;
+  }
+
+  .video__content {
+    width: 648px;
+    height: 500px;
+  }
+
+  .video__controls {
+
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    height: 90px;
+
+    background: rgba(0, 0, 0, .65) no-repeat 0 0;
+
+    &::before {
+
+      content: "";
+
+      position: absolute;
+      left: 90px;
+      right: 160px;
+      top: 43px;
+
+      height: 3px;
+
+      background-color: rgba(255,255,255,0.5);
+    }
+
+  }
+
+  .video__control {
+    top: 35px;
+  }
+
+  .video__control--replay {
+    left: 35px;
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-replay, "MDAwMDAw", "ZmZmZmZm")}');
+  }
+
+  .video__control--subtitles {
+    right: 90px;
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-subtitles, "MDAwMDAw", "ZmZmZmZm")}');
+  }
+
+  .video__control--fullscreen {
+    right: 40px;
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-fullscreen, "MDAwMDAw", "ZmZmZmZm")}');
+  }
+
+  .video__control--current {
+    top: 40px;
+    left: 200px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .video {
+    padding: 73px 200px 85px;
+  }
+
+  .video__title {
+    margin: 0 190px 38px;
+    font-size: 30px;
+  }
+
+  .video__descr {
+    margin: 0 190px 78px;
+  }
+
+  .video__content {
+    width: 800px;
+    height: 500px;
+  }
 
 }

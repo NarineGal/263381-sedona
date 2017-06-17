@@ -34,3 +34,28 @@
   display: block;
 
 }
+
+@media #{$tablet-widths} {
+
+  .reservation {
+    padding: 58px 160px 58px;
+  }
+
+  .reservation__title {
+    margin: 0 0 40px;
+    font-size: 30px;
+  }
+
+  .reservation__descr {
+    margin: 0 0 50px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .reservation {
+    padding: 58px 370px 58px;
+  }
+
+}

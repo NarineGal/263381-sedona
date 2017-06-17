@@ -13,3 +13,31 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+function step1() {
+
+  var pop = document.querySelector('.contact‐form__popup-error');
+
+  pop.classList.remove('contact‐form__popup--closed');
+  pop.classList.add('contact‐form__popup--opened');
+
+}
+
+function step2() {
+
+  var pop = document.querySelector('.contact‐form__popup-error');
+  pop.classList.remove('contact‐form__popup--opened');
+  pop.classList.add('contact‐form__popup--closed');
+
+  pop = document.querySelector('.contact‐form__popup-ok');
+
+  pop.classList.remove('contact‐form__popup--closed');
+  pop.classList.add('contact‐form__popup--opened');
+
+}
+
+function step3() {
+
+  document.getElementById('xxx').click();
+
+}

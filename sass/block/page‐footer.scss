@@ -60,3 +60,50 @@
   }
 
 }
+
+@media #{$tablet-widths} {
+
+  .page‐footer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 120px;
+
+  }
+
+  .page‐footer__hashtag {
+    width: 100%;
+    margin-left: 60px;
+  }
+  .page‐footer__social {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page‐footer__developer {
+    width: 100%;
+    margin-right: 60px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .page‐footer__hashtag {
+    width: 33%;
+    margin: 0px;
+  }
+  .page‐footer__social {
+    width: 34%;
+    margin: 0;
+  }
+  .page‐footer__developer {
+    width: 33%;
+    margin: 0px;
+    padding-right: 40px;
+    text-align: right;
+  }
+
+}

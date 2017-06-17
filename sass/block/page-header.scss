@@ -24,7 +24,6 @@
     z-index: -1;
   }
 
-
 }
 
 .page-header__promo {
@@ -46,8 +45,6 @@ with utf8
 
 with base64
     url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
-
-
 */
   background-color: #6d879c;
   background-image:
@@ -95,33 +92,83 @@ with base64
 
 @media #{$tablet-widths} {
 
-  .page-header {
-
-    min-height: 575px; /* временно для сетки */
-    height: 575px;
-
-  }
-
-  .page-header--inner {
-
-    min-height: 347px; /* временно для сетки */
-    height: 347px;
-
-  }
-
   .page-header__logo {
 
-    height: 575px;
     margin-top: -57px;
-
-    background-image: url("../img/bg-back-desktop@1x.jpg");
 
   }
 
-  .page-header--inner .page-header__logo {
+  .page-header__promo {
 
-    height: 347px;
-    margin-top: -57px;
+    height: 518px;
+
+    margin-top: -27px;
+
+    background-color: #6d879c;
+    background-image:
+      url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
+      url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat no-repeat no-repeat;
+    background-position: center bottom, center bottom, center top;
+    background-size: 1200px 57px, 700px 57px, cover;
+  }
+
+  .page-header__promo-text {
+
+    width: 460px;
+    height: 350px;
+    margin-top: 78px;
+
+  }
+
+  .page-header--inner .page-header__promo {
+
+    height: 292px;
+
+    margin-top: -27px;
+
+    background-color: #6d879c;
+    background-image:
+      url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
+      url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat no-repeat no-repeat;
+    background-position: center bottom, center bottom, center bottom;
+    background-size: 768px 37px, 700px 57px, cover;
+  }
+
+  .page-header--inner  .page-header__promo-text {
+
+    width: 460px;
+    height: 80px;
+    margin-top: 95px;
+
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .page-header--inner .page-header__promo {
+
+    height: 300px;
+
+    margin-top: -27px;
+
+    background-color: #6d879c;
+    background-image:
+      url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
+      url("data:image/svg+xml;base64,PHN2ZyBmaWxsPScjZmZmZmZmJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0nMCAwLCAwIDI2LCAxNjAgMjYnLz4NCiAgICAgICAgICA8cG9seWdvbiBwb2ludHM9JzE2MCAyNiwgMzIwIDI2LCAzMjAgMCcvPg0KICAgICAgICA8L3N2Zz4="),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat no-repeat no-repeat;
+    background-position: center bottom, center bottom, center bottom;
+    background-size: 1200px 60px, 700px 60px, cover;
+  }
+
+  .page-header--inner  .page-header__promo-text {
+
+    margin-top: 104px;
 
   }
 
