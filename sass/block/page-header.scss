@@ -1,3 +1,9 @@
+.page-header {
+
+  position: relative;
+
+}
+
 .page-header__logo {
 
   position: relative;
@@ -94,7 +100,10 @@ with base64
 
   .page-header__logo {
 
+    left: 333px;
+    width: 102px;
     margin-top: -57px;
+    z-index: 21;
 
   }
 
@@ -149,6 +158,13 @@ with base64
 }
 
 @media #{$desktop-widths} {
+
+  .page-header__logo {
+
+    left: 505px;
+    width: 190px;
+
+  }
 
   .page-header--inner .page-header__promo {
 
