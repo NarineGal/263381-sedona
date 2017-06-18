@@ -26,7 +26,31 @@
 
   padding: 33px 20px 34px;
 
+}
 
+.reason__item:nth-child(1) {
+  order: 1;
+}
+.reason__item:nth-child(2) {
+  order: 2;
+}
+.reason__item:nth-child(3) {
+  order: 3;
+}
+.reason__item:nth-child(4) {
+  order: 4;
+}
+.reason__item:nth-child(5) {
+  order: 5;
+}
+.reason__item:nth-child(6) {
+  order: 6;
+}
+.reason__item:nth-child(7) {
+  order: 7;
+}
+.reason__item:nth-child(8) {
+  order: 8;
 }
 
 .reason__title {
@@ -155,6 +179,31 @@
     border-bottom: none;
   }
 
+  .reason__item:nth-child(1) {
+    order: 1;
+  }
+  .reason__item:nth-child(2) {
+    order: 2;
+  }
+  .reason__item:nth-child(3) {
+    order: 4;
+  }
+  .reason__item:nth-child(4) {
+    order: 3;
+  }
+  .reason__item:nth-child(5) {
+    order: 5;
+  }
+  .reason__item:nth-child(6) {
+    order: 6;
+  }
+  .reason__item:nth-child(7) {
+    order: 7;
+  }
+  .reason__item:nth-child(8) {
+    order: 8;
+  }
+
   .reason__item-info {
 
     border-bottom: none;
@@ -218,6 +267,18 @@
       transform: translate(0,-50%);
 
     }
+  }
+
+  .reason__item--burger {
+    background-size: 77px 77px;
+  }
+
+  .reason__item--house {
+    background-size: 77px 77px;
+  }
+
+  .reason__item--gift {
+    background-size: 77px 77px;
   }
 
 }
