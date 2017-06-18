@@ -71,7 +71,11 @@
 }
 
 .reason__img {
-  display: block;
+
+  img {
+    display: block;
+  }
+
 }
 
 .reason__item:last-child {
@@ -195,8 +199,25 @@
     width: 33%;
   }
 
+
   .reason__img {
+    position: relative;
+
     width: 67%;
+    height: 256px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    & img {
+      width: 100%;
+      display: block;
+
+      position:absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+
+    }
   }
 
 }
