@@ -17,6 +17,8 @@
 
         <nav class="main-nav main-nav--opened main-nav--nojs">
 
+          <h2 class="visually-hidden page-header__nav-title">Основная навигация сайта</h2>
+
           <button class="main-nav__toggle" type="button">Открыть меню</button>
 
           <ul class="main-nav__list">
@@ -31,11 +33,11 @@
         </nav>
 
         <div class="page-header__logo">
-          <a href="index.html"><img src="img/logo-sedona-mobile.svg" alt="" title="Logo"  width="102" height="83"></a>
+          <a href="index.html"><img src="img/logo-sedona-mobile.svg" alt="Logo Sedona" width="102" height="83"></a>
         </div>
 
         <div class="page-header__promo">
-          <img class="page-header__promo-text" src="img/text-sedona.svg" alt="" width="227" height="39" title="Promo Text">
+          <img class="page-header__promo-text" src="img/text-sedona.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks !" width="227" height="39">
         </div>
 
       </header>
@@ -44,7 +46,7 @@
 
         <article class="review">
 
-          <h1 class="review__title">Оставьте свой отзыв</h1>
+          <h2 class="review__title">Оставьте свой отзыв</h2>
           <p class="review__descr">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
           <form class="contact‐form" action="https://echo.htmlacademy.ru/" method="post">
@@ -53,22 +55,22 @@
 
             <section class="contact‐form__reviewer">
 
-              <h2 class="contact‐form__section-title">Представьтесь:</h2>
+              <h3 class="contact‐form__section-title">Представьтесь:</h3>
 
               <div class="contact‐form__set">
 
                 <div class="contact‐form__group">
-                  <label class="contact‐form__label">Имя<sup>*</sup>: </label  for="firstname">
+                  <label class="contact‐form__label" for="firstname">Имя<sup>*</sup>: </label>
                   <input class="contact‐form__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
                 </div>
 
                 <div class="contact‐form__group">
-                  <label class="contact‐form__label">Фамилия<sup>*</sup>: </label  for="lastname">
+                  <label class="contact‐form__label" for="lastname">Фамилия<sup>*</sup>: </label>
                   <input class="contact‐form__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
                 </div>
 
                 <div class="contact‐form__group">
-                  <label class="contact‐form__label">Отчество: </label  for="middlename">
+                  <label class="contact‐form__label" for="middlename">Отчество: </label>
                   <input class="contact‐form__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
                 </div>
 
@@ -78,13 +80,13 @@
 
             <section class="contact‐form__contacts">
 
-              <h2 class="contact‐form__section-title">Контактная информация:</h2>
+              <h3 class="contact‐form__section-title">Контактная информация:</h3>
 
               <div class="contact‐form__set">
 
                 <div class="contact‐form__rowgroup">
 
-                  <label class="contact‐form__rowlabel"><span>Контактный</span> телефон<sup>*</sup>: </label  for="phone">
+                  <label class="contact‐form__rowlabel" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
 
                   <div class="contact‐form__inputgroup">
 
@@ -97,7 +99,7 @@
 
                 <div class="contact‐form__rowgroup">
 
-                  <label class="contact‐form__rowlabel">Электронная почта<sup>*</sup>: </label  for="email">
+                  <label class="contact‐form__rowlabel" for="email">Электронная почта<sup>*</sup>: </label>
 
                   <div class="contact‐form__inputgroup">
 
@@ -113,7 +115,7 @@
 
             <section class="contact‐form__impressions">
 
-              <h2 class="contact‐form__section-title">Ваше общее впечатление:</h2>
+              <h3 class="contact‐form__section-title">Ваше общее впечатление:</h3>
 
               <div class="contact‐form__set">
 
@@ -144,7 +146,7 @@
 
             <section class="contact‐form__visits">
 
-              <h2 class="contact‐form__section-title">Посещенные достопримечательности:</h2>
+              <h3 class="contact‐form__section-title">Посещенные достопримечательности:</h3>
 
               <div class="contact‐form__set">
 
@@ -182,7 +184,7 @@
 
             <section class="contact‐form__emotions">
 
-              <h2 class="contact‐form__section-title">Опишите свои эмоции:</h2>
+              <h3 class="contact‐form__section-title">Опишите свои эмоции:</h3>
 
               <div class="contact‐form__set">
 
@@ -219,7 +221,7 @@
 
     <aside class="contact‐form__popup-error contact‐form__popup--closed">
 
-      <h1 class="contact‐form__popup-title">Что-то пошел не так!</h1>
+      <h2 class="contact‐form__popup-title">Что-то пошел не так!</h2>
       <p class="contact‐form__popup-message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
 
       <button class="contact‐form__popup-action btn" type="button" onclick="step2();">Ok</button>
@@ -228,7 +230,7 @@
 
     <aside class="contact‐form__popup-ok contact‐form__popup--closed">
 
-      <h1 class="contact‐form__popup-title">Ваш отзыв отправлен!</h1>
+      <h2 class="contact‐form__popup-title">Ваш отзыв отправлен!</h2>
       <p class="contact‐form__popup-message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
 
       <footer class="contact‐form__popup-footer">

@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/sedona-index-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/sedona-index-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/sedona-index-desktop.png" );
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
   <body>
 
@@ -16,6 +48,8 @@
         <h1 class="visually-hidden page-header__title">Welcome to the gorgeous Sedona</h1>
 
         <nav class="main-nav main-nav--opened main-nav--nojs">
+
+          <h2 class="visually-hidden page-header__nav-title">Основная навигация сайта</h2>
 
           <button class="main-nav__toggle" type="button">Открыть меню</button>
 
@@ -31,11 +65,11 @@
         </nav>
 
         <div class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" alt="" title="Logo"  width="102" height="83">
+          <img src="img/logo-sedona-mobile.svg" alt="Sedona" title="Logo Sedona"  width="102" height="83">
         </div>
 
         <div class="page-header__promo">
-          <img class="page-header__promo-text" src="img/text-sedona-index.svg" alt="" title="Promo Text" width="280" height="213">
+          <img class="page-header__promo-text" src="img/text-sedona-index.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks !" width="282" height="218">
         </div>
 
       </header>
@@ -60,7 +94,7 @@
                 <p class="reason__descr">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="reason__img">
-                <img src="img/photo-city-mobile@1x.jpg" alt="" title="Reason Pic" width="320" height="260">
+                <img src="img/photo-city-mobile@1x.jpg" alt="Настоящий городок" width="320" height="260">
               </div>
             </li>
 
@@ -86,7 +120,7 @@
                 <p class="reason__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="reason__img">
-                <img src="img/photo-bridge-mobile@1x.jpg" alt="" title="Reason Pic" width="320" height="260">
+                <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола"  width="320" height="260">
               </div>
             </li>
 
