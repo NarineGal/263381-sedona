@@ -1,33 +1,5 @@
 .page-content {
 
-  padding-top: 40px;
-
   background-color: #ffffff;
-
-}
-
-@media #{$tablet-widths} {
-
-  .page-content {
-
-    padding-top: 55px;
-
-  }
-
-  .page-content--inner {
-
-    padding-top: 77px;
-
-  }
-
-}
-
-@media #{$desktop-widths} {
-
-  .page-content--inner {
-
-    padding-top: 114px;
-
-  }
 
 }

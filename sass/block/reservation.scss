@@ -1,7 +1,7 @@
 .reservation {
 
-  margin: 0;
-  padding: 33px 20px 49px;
+  margin: -2px 0 0;
+  padding: 28px 20px 50px;
   background-color: #ffffff;
 
   text-transform: uppercase;
@@ -11,7 +11,7 @@
 
 .reservation__title {
 
-  margin: 0 0 26px;
+  margin: 0 0 18px;
   padding: 0;
 
   font-size: 21px;
@@ -21,7 +21,7 @@
 }
 .reservation__descr {
 
-  margin: 0 0 42px;
+  margin: 0 0 36px;
   padding: 0;
 
   font-size: 14px;
@@ -32,22 +32,27 @@
 .reservation__btn {
 
   display: block;
+  padding: 16px 17px;
 
 }
 
 @media #{$tablet-widths} {
 
   .reservation {
-    padding: 58px 160px 58px;
+    padding: 58px 155px 58px;
   }
 
   .reservation__title {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     font-size: 30px;
   }
 
   .reservation__descr {
-    margin: 0 0 50px;
+    margin: 0 20px 42px;
+  }
+
+  .reservation__btn {
+    padding: 16px 80px;
   }
 
 }
@@ -55,7 +60,11 @@
 @media #{$desktop-widths} {
 
   .reservation {
-    padding: 58px 370px 58px;
+    padding: 58px 371px 66px;
+  }
+
+  .reservation__descr {
+    margin: 0 20px 47px;
   }
 
 }
