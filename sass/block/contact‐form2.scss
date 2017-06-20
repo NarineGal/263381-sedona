@@ -132,10 +132,21 @@
       justify-content: space-between;
       align-content: space-between;
     }
-
     .contact‐form__emulation {
-      width: 205px;
+      width: auto;
       text-align: left;
+    }
+    .contact‐form__emulation:nth-child(1) {
+      order: 1;
+    }
+    .contact‐form__emulation:nth-child(2) {
+      order: 2;
+    }
+    .contact‐form__emulation:nth-child(3) {
+      order: 3;
+    }
+    .contact‐form__emulation:nth-child(4) {
+      order: 4;
     }
 
   }
