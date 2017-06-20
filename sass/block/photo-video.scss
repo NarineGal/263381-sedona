@@ -1,10 +1,11 @@
 .photo-video {
+  margin-top: 36px;
 }
 
 .photo-video__title {
 
-  margin-bottom: 40px;
-  padding: 0 20px;
+  margin-bottom: 27px;
+  padding: 0 25px;
 
   font-size: 18px;
   font-weight: bold;
@@ -16,11 +17,11 @@
 
 .photo-video__descr {
 
-  margin: 0 0 35px;
-  padding: 0 20px;
+  margin: 0 0 27px;
+  padding: 0 25px;
 
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
 
@@ -30,13 +31,14 @@
 
   .photo-video {
 
-    padding: 0 50px;
+    margin-top: 72px;
+    padding: 0 60px;
 
   }
 
   .photo-video__title {
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 0 58px;
 
     font-size: 30px;
@@ -45,8 +47,8 @@
 
   .photo-video__descr {
 
-    margin: 0 0 77px;
-    padding: 0 58px;
+    margin: 0 0 70px;
+    padding: 0 110px;
 
   }
 
@@ -55,9 +57,8 @@
 @media #{$desktop-widths} {
 
   .photo-video {
-
+    margin-top: 113px;
     padding: 0;
-
   }
 
   .photo-video__title {

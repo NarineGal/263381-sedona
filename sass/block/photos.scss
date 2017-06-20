@@ -29,7 +29,7 @@
 
 .photos__pic {
 
-  margin: 20px;
+  margin: 22px 20px 20px;
   padding: 0;
 
   & img {
@@ -41,6 +41,9 @@
 }
 
 .photos__info {
+
+  position: relative;
+  top: -4px;
 
   margin: 0 20px 20px;
   padding: 0;
@@ -70,6 +73,9 @@
 
 .photos__likes {
 
+  position: relative;
+  top: 8px;
+
   display: block;
   height: 24px;
   padding: 0 0 0 37px;
@@ -79,7 +85,7 @@
   line-height: 24px;
 
   $icon-svg: svg-size($icon-like, 22, 20);
-  background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "YjJiMmIy")}') no-repeat left center;
+  background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "YjJiMmIy")}') no-repeat left -2px;
 
 }
 
@@ -98,7 +104,7 @@
   }
 
   .photos__item {
-    width: 334px;
+    width: 324px;
     height: 348px;
     overflow: hidden;
     border-bottom: none;
@@ -108,14 +114,19 @@
       height: 480px;
 
       .photos__pic {
-        height: 400px;
+        height: 404px;
+      }
+      .photos__likes {
+        position: absolute;
+        top: 28px;
+        right: 20px;
       }
     }
   }
 
   .photos__pic {
     position: relative;
-    height: 268px;
+    height: 271px;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -139,18 +150,20 @@
   }
   .photos__info-title {
     position: absolute;
-    top: 15px;
+    top: 16px;
     left: 20px;
   }
   .photos__author {
     position: absolute;
-    bottom: 20px;
+    bottom: 18px;
     left: 20px;
   }
   .photos__likes {
     position: absolute;
-    bottom: 30px;
-    right: 35px;
+    top: 28px;
+    right: 27px;
+
+    padding: 0 0 0 30px;
   }
 
 }
@@ -165,6 +178,10 @@
     &:first-child {
       width: 1200px;
       height: 400px;
+
+      .photos__info {
+        top: 320px;
+      }
     }
   }
 
@@ -177,7 +194,7 @@
 
   .photos__info {
     position: absolute;
-    bottom: 0;
+    top: 188px;
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.3);

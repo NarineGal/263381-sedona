@@ -1,13 +1,13 @@
 .video {
 
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 32px;
+  padding-bottom: 42px;
 
 }
 
 .video__title {
 
-  margin: 0 0 40px;
+  margin: 0 0 27px;
   padding: 0 20px;
 
   font-size: 18px;
@@ -20,8 +20,8 @@
 
 .video__descr {
 
-  margin: 0 0 40px;
-  padding: 0 20px;
+  margin: 0 0 35px;
+  padding: 0 30px;
 
   font-size: 14px;
   line-height: 24px;
@@ -38,7 +38,7 @@
   height: 266px;
 
   background:transparent url('../img/video-mobile@1x.jpg') no-repeat 0 0;
-  background-size: cover;
+  background-size: 320px 201px;
 
 }
 
@@ -47,11 +47,11 @@
   position: absolute;
   left: 20px;
   right: 20px;
-  bottom: -65px;
+  bottom: 0px;
 
   height: 110px;
 
-  background: linear-gradient( to bottom, rgba(0, 0, 0, .65) 45px, #b2b2b2 45px, #b2b2b2 110px ) no-repeat 0 0;
+  background: linear-gradient( to bottom, rgba(0, 0, 0, .65) 45px, #f2f2f2 45px, #f2f2f2 110px ) no-repeat 0 0;
 
   &::before {
 
@@ -72,7 +72,7 @@
 .video__control {
 
   position: absolute;
-  bottom: 24px;
+  bottom: 23px;
   z-index: 20;
 
   display: block;
@@ -111,7 +111,7 @@
 .video__control--subtitles {
 
   width: 32px;
-  right: 75px;
+  right: 74px;
   background-size: 32px 20px;
 
   background-image: url('data:image/svg+xml;base64,#{str-replace($icon-subtitles, "MDAwMDAw", "NWM2ODcw")}');
@@ -129,7 +129,7 @@
 .video__control--fullscreen {
 
   width: 20px;
-  right: 25px;
+  right: 23px;
   background-size: 20px 20px;
 
   background-image: url('data:image/svg+xml;base64,#{str-replace($icon-fullscreen, "MDAwMDAw", "NWM2ODcw")}');
@@ -149,7 +149,7 @@
   width: 10px;
   height: 10px;
   top: 19px;
-  left: 65px;
+  left: 57px;
   background-size: 10px 10px;
   background-image: url('data:image/svg+xml;base64,#{str-replace($icon-current, "MDAwMDAw", "ZmZmZmZm")}');
 
@@ -160,21 +160,26 @@
 @media #{$tablet-widths} {
 
   .video {
-    padding: 68px 0px 100px;
+    padding: 65px 0px 38px;
   }
 
   .video__title {
-    margin: 0 0 38px;
+    margin: 0 0 30px;
     font-size: 30px;
   }
 
   .video__descr {
-    margin: 0 0 78px;
+    margin: 0 0 73px;
+    padding: 0 110px;
   }
 
   .video__content {
     width: 648px;
     height: 500px;
+
+    background:transparent url('../img/video-mobile@1x.jpg') no-repeat 0 0;
+    background-size: 648px 500px;
+
   }
 
   .video__controls {
@@ -182,7 +187,7 @@
     position: absolute;
     left: 0px;
     right: 0px;
-    bottom: 0px;
+    bottom: 2px;
 
     height: 90px;
 
@@ -233,21 +238,22 @@
 @media #{$desktop-widths} {
 
   .video {
-    padding: 73px 200px 85px;
+    padding: 70px 200px 82px;
   }
 
   .video__title {
-    margin: 0 190px 38px;
+    margin: 0 190px 30px;
     font-size: 30px;
   }
 
   .video__descr {
-    margin: 0 190px 78px;
+    margin: 0 80px 72px;
   }
 
   .video__content {
     width: 800px;
     height: 500px;
+    background-size: 800px 500px;
   }
 
 }
