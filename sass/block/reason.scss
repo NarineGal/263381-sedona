@@ -6,6 +6,153 @@
   padding: 0;
 
   list-style: none;
+
+}
+
+.reason__item-wide:nth-child(1) {
+    order: 1;
+  }
+  .reason__item-icon:nth-child(2) {
+    order: 2;
+  }
+  .reason__item-icon:nth-child(3) {
+    order: 3;
+  }
+  .reason__item-icon:nth-child(4) {
+    order: 4;
+  }
+  .reason__item-wide:nth-child(5) {
+    order: 5;
+  }
+  .reason__item:nth-child(6) {
+    order: 6;
+  }
+  .reason__item:nth-child(7) {
+    order: 7;
+  }
+  .reason__item:nth-child(8) {
+    order: 7;
+  }
+
+.reason__item-wide {
+
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 0;
+  padding: 37px 20px 0px;
+
+}
+
+.reason__item-info-wide {
+
+  padding: 0px 0px 17px;
+
+}
+
+.reason__title {
+
+  display: block;
+
+  margin: 0 0 11px;
+  padding: 0;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reason__number {
+
+  display: block;
+
+  margin: 0 0 20px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.reason__descr {
+
+  margin: 0 0 14px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.reason__img {
+  margin: 10px -20px 0;
+
+  img {
+    display: block;
+  }
+}
+
+
+.reason__item-icon {
+
+  margin: 0px 0 0 20px;
+  padding: 14px 20px 0px 50px;
+
+  background-repeat: no-repeat;
+  background-position: 1px top;
+
+  background-color: $white;
+  border-bottom: none;
+
+  & .reason__title {
+   margin: 0 0 14px;
+   padding: 0;
+  }
+
+}
+.reason__item-icon:nth-child(2) {
+  margin-top: 26px;
+  padding: 9px 20px 0px 50px;
+}
+.reason__item-icon:nth-child(4) {
+  margin-top: 22px;
+  padding: 6px 20px 23px 50px;
+}
+
+
+.reason__item-icon .reason__title,
+.reason__item-icon .reason__descr {
+
+  text-align: left;
+
+}
+
+.reason__item-icon--burger {
+
+  background-image: url('data:image/svg+xml;base64,#{str-replace($icon-burger, "MDAwMDAw", "ODFiM2Qy")}');
+  background-position: 0px 1px;
+  background-size: 36px 35px;
+
+}
+
+.reason__item-icon--house {
+
+  background-image: url('data:image/svg+xml;base64,#{str-replace($icon-house, "MDAwMDAw", "ODFiM2Qy")}');
+  background-size: 39px 36px;
+
+}
+
+.reason__item-icon--gift {
+
+  background-image: url('data:image/svg+xml;base64,#{str-replace($icon-gift, "MDAwMDAw", "ODFiM2Qy")}');
+  background-position: 5px 3px;
+  background-size: 32px 38px;
+
 }
 
 .reason__item {
@@ -13,24 +160,28 @@
   display: block;
 
   margin: 0;
-  padding: 0;
+  padding: 26px 20px 0px;
+
+  font-size: 0;
+
+  background-color: #eeeeee;
+
+}
+.reason__item-info {
+
+  padding: 0 20px 15px;
+
+  border-bottom: 1px solid #d6d6d6;
 
 }
 
-.reason__item:nth-child(1), .reason__item:nth-child(5) {
-  height: 452px; /* временно для сетки */
-}
-.reason__item:nth-child(2) {
-  height: 147px; /* временно для сетки */
-}
-.reason__item:nth-child(3) {
-  height: 114px; /* временно для сетки */
-}
-.reason__item:nth-child(4) {
-  height: 155px; /* временно для сетки */
-}
-.reason__item:nth-child(6), .reason__item:nth-child(7), .reason__item:nth-child(8) {
-  height: 168px; /* временно для сетки */
+.reason__item:nth-child(8) {
+
+  padding: 25px 15px 0px;
+
+  .reason__item-info {
+    border-bottom: none;
+  }
 }
 
 @media #{$tablet-widths} {
@@ -41,22 +192,271 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    align-items: stretch;
+
+  }
+
+  .reason__title {
+    font-size: 21px;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .reason__number {
+    margin: 0 0 27px;
+    padding: 0 40px;
+  }
+
+  .reason__descr {
+    padding: 0 30px;
+  }
 
 
+  .reason__item-wide,
+  .reason__item {
 
+      height: 256px;
 
-    height: 1099px; /* временно для сетки */
+  }
+
+  .reason__item-wide {
+    width: 100%;
+    display: flex;
+
+    padding: 0;
+  }
+
+  .reason__item-info-wide {
+    padding: 45px 15px 50px;
+    width: 256px;
+
+    .reason__title {
+      margin-top: 0;
+      padding: 0px 37px;
+    }
+  }
+
+  .reason__img {
+    position: relative;
+
+    width: 67%;
+    height: 256px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    & img {
+      width: 100%;
+      display: block;
+
+      position:absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+
+    }
+  }
+
+  .reason__item-icon,
+  .reason__item-icon:nth-child(2),
+  .reason__item-icon:nth-child(4) {
+    width: 256px;
+    min-height: 330px;
+    margin: 0;
+    padding: 159px 20px 30px;
+    text-align: center;
+
+    .reason__title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .reason__descr {
+      text-align: center;
+      padding: 0 30px;
+    }
+  }
+  .reason__item-icon:nth-child(3) {
+    order: 4;
+
+    .reason__descr {
+      text-align: center;
+      padding: 0 20px;
+    }
+
+  }
+  .reason__item-icon:nth-child(4) {
+    order: 3;
+  }
+
+  .reason__item-icon--burger {
+
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-burger, "MDAwMDAw", "ODFiM2Qy")}');
+    background-position: 89px 62px;
+    background-size: 76px 69px;
+
+  }
+
+  .reason__item-icon--house {
+
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-house, "MDAwMDAw", "ODFiM2Qy")}');
+    background-position: 90px 60px;
+    background-size: 75px 72px;
+
+  }
+
+  .reason__item-icon--gift {
+
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-gift, "MDAwMDAw", "ODFiM2Qy")}');
+    background-position: 95px 57px;
+    background-size: 64px 75px;
+
+  }
+
+  .reason__item-wide:nth-child(5) {
+    flex-direction: row-reverse;
   }
 
   .reason__item {
-    width: 250px;
-    height: 250px !important;
-    background-color: $gray-light; /* временно для сетки */
+    width: 33.33%;
+    min-height: 256px;
+
+    .reason__item-info {
+      border-bottom: none;
+    }
   }
 
-  .reason__item:nth-child(1), .reason__item:nth-child(5) {
-    width: 100% !important; /* временно для сетки */
+  .reason__item:nth-child(6) {
+    .reason__descr {
+      padding: 0px;
+    }
+  }
+
+  .reason__item:nth-child(7) {
     flex-grow: 1;
+    .reason__descr {
+      padding: 0 15px;
+    }
+  }
+
+  .reason__item:nth-child(8) {
+
+    .reason__descr {
+      padding: 0 18px;
+    }
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .reason {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: stretch;
+
+  }
+
+  .reason__title {
+    font-size: 21px;
+    margin-top: 20px;
+    padding: 0 90px;
+  }
+
+  .reason__number {
+    margin: 0 0 27px;
+    padding: 0 40px;
+  }
+
+  .reason__descr {
+    padding: 0 60px;
+  }
+
+  .reason__item-wide,
+  .reason__item {
+
+      height: 256px;
+
+  }
+
+  .reason__item-wide {
+    width: 100%;
+    display: flex;
+
+    padding: 0;
+  }
+
+  .reason__item-info-wide {
+    padding: 52px 0px 50px;
+    width: 400px;
+
+    .reason__title {
+      margin-top: 0;
+      padding: 0px 124px;
+    }
+
+    .reason__descr {
+      margin-top: 0;
+      padding: 0px 60px;
+    }
+  }
+
+  .reason__item-icon,
+  .reason__item-icon:nth-child(2),
+  .reason__item-icon:nth-child(4) {
+    width: 400px;
+    padding: 159px 0px 30px;
+
+    .reason__descr {
+      text-align: center;
+      padding: 0 50px;
+    }
+
+  }
+  .reason__item-icon:nth-child(3) {
+    order: 4;
+
+    padding: 159px 100px 30px;
+
+    .reason__descr {
+      padding: 0;
+    }
+
+  }
+  .reason__item-icon:nth-child(4) {
+    order: 3;
+  }
+
+  .reason__item-icon--burger {
+
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-burger, "MDAwMDAw", "ODFiM2Qy")}');
+    background-position: 162px 62px;
+    background-size: 76px 69px;
+
+  }
+
+  .reason__item-icon--house {
+
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-house, "MDAwMDAw", "ODFiM2Qy")}');
+    background-position: 162px 60px;
+    background-size: 75px 72px;
+
+  }
+
+  .reason__item-icon--gift {
+
+    background-image: url('data:image/svg+xml;base64,#{str-replace($icon-gift, "MDAwMDAw", "ODFiM2Qy")}');
+    background-position: 165px 57px;
+    background-size: 64px 75px;
+
+  }
+
+  .reason__item:nth-child(7) {
+    flex-grow: 1;
+    .reason__descr {
+      padding: 0 25px;
+    }
   }
 
 }

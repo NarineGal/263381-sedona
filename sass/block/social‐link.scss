@@ -1,0 +1,61 @@
+.social‐link {
+
+  width: 46px;
+  height: 48px;
+
+  display: inline-block;
+  margin-right: 2px;
+  vertical-align: middle;
+  text-align: center;
+
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+}
+
+
+
+.social‐link‐-fb {
+
+  background: $btn-bg-color url('data:image/svg+xml;base64,#{str-replace($icon-facebook, "MDAwMDAw", "ZmZmZmZm")}') no-repeat 50% 50%;
+
+  &:hover {
+    background: $btn-bg-color-hover url('data:image/svg+xml;base64,#{str-replace($icon-facebook, "MDAwMDAw", "ZmZmZmZm")}') no-repeat 50% 50%;
+  }
+
+  &:active {
+    background: $btn-bg-color-active url('data:image/svg+xml;base64,#{str-replace($icon-facebook, "MDAwMDAw", "ODhiNmQx")}') no-repeat 50% 50%;
+  }
+
+}
+
+.social‐link‐-tw {
+
+  background: $btn-bg-color url('data:image/svg+xml;base64,#{str-replace($icon-twitter, "MDAwMDAw", "ZmZmZmZm")}') no-repeat 50% 50%;
+
+  &:hover {
+    background: $btn-bg-color-hover url('data:image/svg+xml;base64,#{str-replace($icon-twitter, "MDAwMDAw", "ZmZmZmZm")}') no-repeat 50% 50%;
+  }
+
+  &:active {
+    background: $btn-bg-color-active url('data:image/svg+xml;base64,#{str-replace($icon-twitter, "MDAwMDAw", "ODhiNmQx")}') no-repeat 50% 50%;
+  }
+
+}
+
+.social‐link‐-yt {
+
+  background: $btn-bg-color url('data:image/svg+xml;base64,#{str-replace($icon-youtube, "MDAwMDAw", "ZmZmZmZm")}') no-repeat 50% 50%;
+
+  &:hover {
+    background: $btn-bg-color-hover url('data:image/svg+xml;base64,#{str-replace($icon-youtube, "MDAwMDAw", "ZmZmZmZm")}') no-repeat 50% 50%;
+  }
+
+  &:active {
+    background: $btn-bg-color-active url('data:image/svg+xml;base64,#{str-replace($icon-youtube, "MDAwMDAw", "ODhiNmQx")}') no-repeat 50% 50%;
+  }
+
+}

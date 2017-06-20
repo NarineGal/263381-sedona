@@ -1,6 +1,6 @@
 .photos {
 
-  padding: 0 20px;
+  border-top: 1px solid #e5e5e5;
 
 }
 
@@ -13,73 +13,197 @@
 
 .photos__list {
 
-  display: block;
-  margin: 0;
   padding: 0;
 
 }
 
 .photos__item {
 
-  height: 415px; /*Временно*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+.photos__pic {
+
+  margin: 22px 20px 20px;
+  padding: 0;
+
+  & img {
+
+    display: block;
+
+  }
+
+}
+
+.photos__info {
+
+  position: relative;
+  top: -4px;
+
+  margin: 0 20px 20px;
+  padding: 0;
+
+}
+
+.photos__info-title {
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+
+}
+
+.photos__author {
+
+  display: block;
+
+  font-size: 14px;
+  line-height: 24px;
+
+}
+
+.photos__likes {
+
+  position: relative;
+  top: 8px;
+
+  display: block;
+  height: 24px;
+  padding: 0 0 0 37px;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+
+  $icon-svg: svg-size($icon-like, 22, 20);
+  background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "YjJiMmIy")}') no-repeat left -2px;
 
 }
 
 @media #{$tablet-widths} {
 
   .photos {
-
-    padding: 0 60px;
-
+    border-top: none;
   }
+
 
   .photos__list {
 
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
 
   }
 
   .photos__item {
+    width: 324px;
+    height: 348px;
+    overflow: hidden;
+    border-bottom: none;
 
-    width: 50%;
-    height: 348px; /*Временно*/
+    &:first-child {
+      width: 668px;
+      height: 480px;
 
+      .photos__pic {
+        height: 404px;
+      }
+      .photos__likes {
+        position: absolute;
+        top: 28px;
+        right: 20px;
+      }
+    }
   }
 
-  .photos__item:first-child {
+  .photos__pic {
+    position: relative;
+    height: 271px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 
-    width: 100%;
-    height: 480px; /*Временно*/
+    & img {
+      width: 100%;
+      display: block;
 
+      position:absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+
+    }
+  }
+
+  .photos__info {
+    position: relative;
+    height: 80px;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  .photos__info-title {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+  }
+  .photos__author {
+    position: absolute;
+    bottom: 18px;
+    left: 20px;
+  }
+  .photos__likes {
+    position: absolute;
+    top: 28px;
+    right: 27px;
+
+    padding: 0 0 0 30px;
   }
 
 }
 
 @media #{$desktop-widths} {
 
-  .photos {
-
-    min-height: 668px; /*Временно*/
-    padding: 0;
-
-  }
-
   .photos__item {
-
+    position: relative;
     width: 400px;
-    height: 268px; /*Временно*/
+    height: 268px;
 
+    &:first-child {
+      width: 1200px;
+      height: 400px;
+
+      .photos__info {
+        top: 320px;
+      }
+    }
   }
 
-  .photos__item:first-child {
+  .photos__pic {
+    height: 268px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
 
-    width: 100%;
-    height: 403px; /*Временно*/
+  .photos__info {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff;
+    z-index: 10;
+  }
 
+  .photos__likes {
+    background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "ZmZmZmZm")}') no-repeat left center;
   }
 
 }
