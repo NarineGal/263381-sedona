@@ -1,0 +1,38 @@
+// файл style.scss SASS
+@import "variables.scss";
+@import "global/normalize.scss";
+/*@import "global/outlines.scss";*/
+@import "mixins.scss";
+@import "global/fonts.scss";
+@import "global/type.scss";
+
+//index
+@import "block/page-wrapper.scss";
+@import "block/page-header.scss";
+@import "block/main‐nav.scss";
+@import "block/btn.scss";
+
+@import "block/page-content.scss";
+@import "block/page-header.scss";
+@import "block/reasons.scss";
+@import "block/reason.scss";
+
+@import "block/reservation.scss";
+
+@import "block/map.scss";
+
+@import "block/page‐footer.scss";
+@import "block/social‐links.scss";
+@import "block/social‐link.scss";
+
+//photo-video
+@import "block/photo-video.scss";
+@import "block/photos.scss";
+@import "block/video.scss";
+
+//form
+@import "block/review.scss";
+@import "block/contact‐form.scss";
+@import "block/contact‐form1.scss";
+@import "block/contact‐form2.scss";
+@import "block/contact‐form3.scss";
