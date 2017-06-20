@@ -4,13 +4,13 @@
 /*@import "global/outlines.scss";*/
 @import "mixins.scss";
 @import "global/fonts.scss";
-@import "global/forms.scss";
 @import "global/type.scss";
 
 //index
 @import "block/page-wrapper.scss";
 @import "block/page-header.scss";
 @import "block/main‐nav.scss";
+@import "block/btn.scss";
 
 @import "block/page-content.scss";
 @import "block/page-header.scss";
@@ -33,3 +33,6 @@
 //form
 @import "block/review.scss";
 @import "block/contact‐form.scss";
+@import "block/contact‐form1.scss";
+@import "block/contact‐form2.scss";
+@import "block/contact‐form3.scss";

@@ -1,0 +1,132 @@
+@media #{$desktop-widths} {
+
+
+  .contact‐form__impressions {
+
+    width: 479px;
+
+    .contact‐form__section-title {
+
+      margin-left: 77px;
+
+    }
+
+    .contact‐form__set {
+      height: 210px;
+      margin: 60px 0 80px;
+    }
+
+  }
+
+  .contact‐form__reviewer {
+
+    width: 480px;
+    padding-left: 80px;
+
+    &::after {
+      right: 400px;
+    }
+
+    .contact‐form__set {
+      height: 214px;
+      margin: 57px 0 80px;
+    }
+
+  }
+
+  .contact‐form__contacts {
+
+    position: relative;
+
+    .contact‐form__section-title {
+      top: -13px;
+      left: 3px;
+      margin-left: 29%;
+    }
+
+    .contact‐form__set {
+      height: 58px;
+      margin: 60px 0 80px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .contact‐form__rowlabel {
+      padding : 15px 10px 0;
+    }
+
+    .contact‐form__rowlabel span {
+      display: none;
+    }
+
+    .contact‐form__rowgroup {
+      flex-direction: row;
+      width: auto;
+    }
+    .contact‐form__rowgroup:nth-child(1) {
+       width: 400px;
+    }
+    .contact‐form__rowgroup:nth-child(2) {
+       width: 460px;
+    }
+
+  }
+
+  .contact‐form__visits {
+
+    width: 100%;
+    text-align: center;
+
+    .contact‐form__section-title {
+      position: relative;
+      text-align: center;
+      top: -28px;
+
+      display: inline-block;
+      width: 400px;
+    }
+
+    .contact‐form__set {
+      width: 100%;
+      height: 58px;
+      margin: auto;
+      margin-top: 13px;
+      margin-bottom: 76px;
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+
+    .contact‐form__emulation {
+      width: auto;
+      text-align: left;
+    }
+    .contact‐form__emulation:nth-child(1) {
+      order: 1;
+    }
+    .contact‐form__emulation:nth-child(2) {
+      order: 3;
+    }
+    .contact‐form__emulation:nth-child(3) {
+      order: 2;
+    }
+    .contact‐form__emulation:nth-child(4) {
+      order: 4;
+    }
+
+  }
+
+  .contact‐form__emotions {
+
+    .contact‐form__set {
+      margin-bottom: 59px;
+    }
+
+  }
+
+
+  .contact‐form__action {
+    width: 480px;
+  }
+
+}
