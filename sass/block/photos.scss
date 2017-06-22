@@ -1,51 +1,36 @@
 .photos {
-
   border-top: 1px solid #e5e5e5;
-
 }
 
 .photos__title {
-
   margin: 0;
   padding: 0;
-
 }
 
 .photos__list {
-
   padding: 0;
-
 }
 
 .photos__item {
-
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
-
   border-bottom: 1px solid #e5e5e5;
-
 }
 
 .photos__pic {
-
-  margin: 22px 20px 20px;
+  margin: 22px 20px 16px;
   padding: 0;
-
   & img {
-
     display: block;
-
   }
-
 }
 
 .photos__info {
 
   position: relative;
-  top: -4px;
-
-  margin: 0 20px 20px;
+  margin: 0px 20px 13px;
   padding: 0;
 
 }
@@ -60,6 +45,10 @@
   line-height: 24px;
   text-transform: uppercase;
 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
 }
 
 .photos__author {
@@ -69,141 +58,155 @@
   font-size: 14px;
   line-height: 24px;
 
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
 }
 
 .photos__likes {
 
-  position: relative;
-  top: 8px;
-
   display: block;
-  height: 24px;
+
+  height: 30px;
+  margin-top: 5px;
   padding: 0 0 0 37px;
 
   font-size: 14px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 30px;
 
   $icon-svg: svg-size($icon-like, 22, 20);
-  background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "YjJiMmIy")}') no-repeat left -2px;
+  background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "YjJiMmIy")}') no-repeat left 2px;
 
 }
+
+// For Tablet -----------------------
 
 @media #{$tablet-widths} {
 
-  .photos {
-    border-top: none;
-  }
+//--------------------------------
 
+.photos {
+  margin-top: -1px;
+  border-top: none;
+}
 
-  .photos__list {
+.photos__list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    display: flex;
-    flex-wrap: wrap;
+.photos__item {
+  width: 324px;
+  min-height: 348px;
+  overflow: hidden;
+  border-bottom: none;
+  background-color: #f2f2f2;
 
-  }
+  &:first-child {
+    width: 668px;
+    min-height: 480px;
 
-  .photos__item {
-    width: 324px;
-    height: 348px;
-    overflow: hidden;
-    border-bottom: none;
-
-    &:first-child {
-      width: 668px;
-      height: 480px;
-
-      .photos__pic {
-        height: 404px;
-      }
-      .photos__likes {
-        position: absolute;
-        top: 28px;
-        right: 20px;
-      }
+    .photos__pic {
+      min-height: 400px;
+    }
+    .photos__info {
+      margin: 0;
+      padding: 15px 100px 0px 20px;
     }
   }
+}
 
-  .photos__pic {
-    position: relative;
-    height: 271px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+.photos__pic {
+  position: relative;
+  min-height: 268px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 
-    & img {
-      width: 100%;
-      display: block;
+  & img {
+    width: 100%;
+    display: block;
 
-      position:absolute;
-      top: 50%;
-      transform: translate(0,-50%);
+    position:absolute;
+    top: 50%;
+    transform: translate(0,-50%);
 
-    }
   }
+}
 
-  .photos__info {
-    position: relative;
-    height: 80px;
-    margin: 0;
-    background-color: #f2f2f2;
-  }
-  .photos__info-title {
-    position: absolute;
-    top: 16px;
-    left: 20px;
-  }
-  .photos__author {
-    position: absolute;
-    bottom: 18px;
-    left: 20px;
-  }
-  .photos__likes {
-    position: absolute;
-    top: 28px;
-    right: 27px;
+.photos__info {
 
-    padding: 0 0 0 30px;
-  }
+  position: relative;
+  min-height: 80px;
+  margin: 0;
+  padding: 15px 100px 0px 20px;
+  background-color: #f2f2f2;
 
 }
+.photos__info-title {
+
+}
+.photos__author {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+}
+
+.photos__likes {
+
+  position: absolute;
+  top: 20px;
+  right: 0px;
+
+  width: 85px;
+  padding: 0 0 0 34px;
+}
+
+//--------------------------------
+}
+
+
+
+// For Tablet -----------------------
 
 @media #{$desktop-widths} {
 
-  .photos__item {
-    position: relative;
-    width: 400px;
-    height: 268px;
+//--------------------------------
 
-    &:first-child {
-      width: 1200px;
-      height: 400px;
+.photos__item {
+  position: relative;
+  width: 400px;
+  min-height: 268px;
 
-      .photos__info {
-        top: 320px;
-      }
+  &:first-child {
+    width: 1200px;
+    min-height: 400px;
+
+    .photos__info {
+      top: 320px;
     }
   }
+}
 
-  .photos__pic {
-    height: 268px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
+.photos__pic {
+  min-height: 268px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
 
-  .photos__info {
-    position: absolute;
-    top: 188px;
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.3);
-    color: #ffffff;
-    z-index: 10;
-  }
+.photos__info {
+  position: absolute;
+  top: 188px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  color: #ffffff;
+  z-index: 10;
+}
 
-  .photos__likes {
-    background: url('data:image/svg+xml;base64,#{str-replace($icon-like, "MDAwMDAw", "ZmZmZmZm")}') no-repeat left center;
-  }
-
+//--------------------------------
 }

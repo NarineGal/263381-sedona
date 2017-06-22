@@ -1,10 +1,12 @@
 .reasons {
-
+  margin: 0;
+  padding: 0;
 }
 
-.reasons_header {
+.reasons__header {
 
-  padding: 40px 25px 44px;
+  margin: 0;
+  padding: 40px 30px 44px;
 
 /*
 with base64
@@ -22,13 +24,13 @@ url("data:image/svg+xml;utf8,
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScwIDAsIDAgMjYsIDE2MCAyNicgZmlsbD0nIzgxYjNkMicvPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScxNjAgMjYsIDMyMCAyNiwgMzIwIDAnIGZpbGw9JyM4MWIzZDInLz4NCiAgICA8L3N2Zz4=");
   background-repeat: no-repeat;
   background-position: 0 bottom;
-  background-size: 320px 15px;
+  background-size: 320px 17px;
 
 }
 
 .reasons__title {
 
-  margin-bottom: 27px;
+  margin: 0 0 28px;
   padding: 0;
 
   font-size: 18px;
@@ -56,46 +58,50 @@ url("data:image/svg+xml;utf8,
 
 }
 
+// For Tablet ----------------------------------
+
 @media #{$tablet-widths} {
 
-  .reasons_header {
+.reasons__header {
 
-    padding: 50px 130px 50px;
-    background-image: none;
-
-  }
-
-  .reasons__title {
-
-    margin: 0 0 28px;
-    padding: 0;
-
-    font-size: 21px;
-
-  }
-
-  .reasons__descr {
-    letter-spacing: 0.04px;
-  }
+  padding: 50px 130px 50px;
+  background-image: none;
 
 }
 
+.reasons__title {
+
+  margin: 0 0 28px;
+
+  font-size: 21px;
+
+}
+
+.reasons__descr {
+  letter-spacing: 0.04px;
+}
+
+}
+
+
+// For Desktop -------------------------------
+
 @media #{$desktop-widths} {
 
-  .reasons_header {
+.reasons__header {
 
-    padding: 50px 350px 50px;
+  padding: 50px 350px 50px;
 
-  }
+}
 
-  .reasons__title {
+.reasons__title {
 
-    font-size: 21px;
+  font-size: 21px;
 
-  }
+}
 
-  .reasons__descr {
-    letter-spacing: 0.05px;
-  }
+.reasons__descr {
+  letter-spacing: 0.05px;
+}
 
 }

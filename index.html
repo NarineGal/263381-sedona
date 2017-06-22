@@ -6,40 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url( "img/sedona-index-mobile.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "img/sedona-index-tablet.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1200px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "img/sedona-index-desktop.png" );
-        }
-      }
-
-      BODY {
-        opacity: .5;
-      }
-    </style>
-    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
-
   </head>
   <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="icon-burger" viewBox="0 0 76.166 68.959"><path d="M71.914 46.042H4.252A4.265 4.265 0 0 0 0 50.294v3.454A4.265 4.265 0 0 0 4.252 58h.956v1.037c0 5.457 4.464 9.922 9.921 9.922h45.908c5.456 0 9.921-4.465 9.921-9.922V58h.956a4.265 4.265 0 0 0 4.252-4.252v-3.454a4.264 4.264 0 0 0-4.252-4.252zm-3.956 12.995c0 3.815-3.104 6.922-6.921 6.922H15.129a6.929 6.929 0 0 1-6.921-6.922V58h59.75v1.037zm5.208-5.289c0 .679-.573 1.252-1.252 1.252H4.252A1.268 1.268 0 0 1 3 53.748v-3.454c0-.679.573-1.252 1.252-1.252h67.662c.679 0 1.252.573 1.252 1.252v3.454zM16.162 37.856l5.473 4 5.477-4 5.479 4 5.478-4 5.479 4 5.478-4 5.479 4 5.48-4 5.489 4 6.368-4.644-1.768-2.424-4.6 3.356-5.489-4-5.48 4-5.479-4.001-5.478 4.001-5.479-4.001-5.478 4.001-5.479-4.001-5.476 4.001-5.473-4.002-5.477 4.002-4.593-3.355-1.77 2.422 6.363 4.645zM70.888 31.094c.041-.61.055-2.616.037-3C70.242 12.476 55.804 0 38.083 0 20.363 0 5.924 12.476 5.241 28.094c-.017.384-.004 2.389.039 3h65.608zM38.083 3c16.031 0 29.15 11.154 29.842 25.094H8.241C8.933 14.154 22.051 3 38.083 3z"/><circle cx="38.083" cy="15.042" r="2"/><circle cx="30.083" cy="10.083" r="2"/><circle cx="46.083" cy="10.083" r="2"/></symbol><symbol id="icon-gift" viewBox="0 0 63 75.084"><path d="M60.165 22.23H35.758c13.604-6.815 14.688-11.115 14.188-13.52-1.145-3.916-5.604-6.938-9.848-5.341-5.484 2.063-7.029 10.262-8.514 16.19-1.894-5.998-3.726-13.649-8.011-17.525C22.331.909 20.524-.203 17.897.031c-3.965.352-9.652 5.317-7.344 10.849 2.217 5.313 9.539 8.67 14.354 11.35H2.834A2.843 2.843 0 0 0 0 25.065V36.25a2.842 2.842 0 0 0 2.835 2.834h.27v35.999h56.958V39.084h.104a2.842 2.842 0 0 0 2.835-2.834V25.065a2.846 2.846 0 0 0-2.837-2.835zM41.766 5.873c2.07-.306 4.907 1.283 5.176 3.171.386 2.723-3.349 5.192-5.008 6.343-2.484 1.723-4.853 2.611-7.178 4.006.872-3.645 2.512-12.854 7.01-13.52zm-22.534 9.848c-2.19-1.467-6.444-4.378-6.342-7.678.11-3.552 5.655-6.491 8.68-3.839 3.797 3.331 5.625 10.972 7.01 16.357-3.199-1.519-6.23-2.753-9.348-4.84zm5.882 56.426H6.042V39.084h19.072v33.063zm0-36.063H3V25.23h22.114v10.854zm10.001 36.062h-7.063V25.23h7.063v46.916zm22.01.001H38.053V39.084h19.072v33.063zM60 36.084H38.053V25.23H60v10.854z"/></symbol><symbol id="icon-house" viewBox="0 0 74.695 72.346"><path d="M29.503 65.345h16V41.407h-16v23.938zm13.063-2.938H32.441V44.345h10.125v18.062z"/><path d="M72.62 39.44l2.075-2.078-9.907-9.913V.47H50.974v13.161L37.349 0 0 37.363l2.077 2.078 7.832-7.832v37.799H5.971v2.938h63.875v-2.938h-5.059v-37.8l7.833 7.832zM53.913 3.408h7.938v21.104l-7.938-7.94V3.408zm7.937 65.999H12.846V28.671L37.348 4.169 61.85 28.671v40.736z"/><path d="M29.753 27.21a7.75 7.75 0 1 0 15.5 0 7.75 7.75 0 0 0-15.5 0zm7.75-4.969a4.97 4.97 0 1 1 0 9.941 4.97 4.97 0 0 1 0-9.941zM16.909 41.407h3v3.938h-3zM22.846 41.407h3v3.938h-3zM16.909 47.407h3v3.938h-3zM22.846 47.407h3v3.938h-3zM48.846 41.407h3v3.938h-3zM54.784 41.407h3v3.938h-3zM48.846 47.407h3v3.938h-3zM54.784 47.407h3v3.938h-3z"/></symbol></svg>
 
     <div class="page-wrapper">
 
@@ -65,11 +35,19 @@
         </nav>
 
         <div class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" alt="Sedona" title="Logo Sedona"  width="102" height="84">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
+          </picture>
+
         </div>
 
         <div class="page-header__promo">
-          <img class="page-header__promo-text" src="img/text-sedona-index.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks !" width="280" height="218">
+
+          <img class="page-header__promo-text" src="img/text-sedona-index.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks !" width="280" height="214">
+
         </div>
 
       </header>
@@ -78,7 +56,7 @@
 
         <article class="reasons">
 
-          <header class="reasons_header">
+          <header class="reasons__header">
 
             <h2 class="reasons__title"><span>Седона &#x2012; небольшой</span> городок в Аризоне, заслуживающий большего!</h2>
             <p class="reasons__descr">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
@@ -87,40 +65,65 @@
 
           <ul class="reason">
 
-            <li class="reason__item-wide">
-              <div class="reason__item-info-wide">
+            <li class="reason__item reason__item--wide">
+              <div class="reason__item-info reason__item-info--wide">
                 <b class="reason__title">Настоящий городок</b>
                 <span class="reason__number">&#x2012; №1 &#x2012;</span>
                 <p class="reason__descr">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="reason__img">
-                <img src="img/photo-city-mobile@1x.jpg" alt="Настоящий городок" width="320" height="260">
+
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                  <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Настоящий городок" width="320" height="260">
+                </picture>
+
               </div>
             </li>
 
-            <li class="reason__item-icon reason__item-icon--house">
-              <b class="reason__title">Жилье</b>
-              <p class="reason__descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <li class="reason__item reason__item--icon reason__item--icon-first">
+              <div class="reason__item-icon reason__item-icon--house">
+                <svg width="39" height="37" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-house"></use></svg>
+              </div>
+              <div class="reason__item-info reason__item-info--icon">
+                <b class="reason__title">Жилье</b>
+                <p class="reason__descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
             </li>
 
-            <li class="reason__item-icon reason__item-icon--gift">
-              <b class="reason__title">Сувениры</b>
-              <p class="reason__descr">Не только китайского, но и местного производства!</p>
+            <li class="reason__item reason__item--icon">
+              <div class="reason__item-icon reason__item-icon--gift">
+                <svg width="32" height="38" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gift"></use></svg>
+              </div>
+              <div class="reason__item-info reason__item-info--icon">
+                <b class="reason__title">Сувениры</b>
+                <p class="reason__descr">Не только китайского,<br> но и местного производства!</p>
+              </div>
             </li>
 
-            <li class="reason__item-icon reason__item-icon--burger">
-              <b class="reason__title">Еда</b>
-              <p class="reason__descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="reason__item reason__item--icon reason__item--icon-last">
+              <div class="reason__item-icon reason__item-icon--burger">
+                <svg width="40" height="35" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger"></use></svg>
+              </div>
+              <div class="reason__item-info reason__item-info--icon">
+                <b class="reason__title">Еда</b>
+                <p class="reason__descr">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+              </div>
             </li>
 
-            <li class="reason__item-wide">
-              <div class="reason__item-info-wide">
-                <b class="reason__title">Там есть мост дьявола</b>
+            <li class="reason__item reason__item--wide-back">
+              <div class="reason__item-info reason__item-info--wide-back">
+                <b class="reason__title">Там есть<br>мост дьявола</b>
                 <span class="reason__number">&#x2012; №2 &#x2012;</span>
                 <p class="reason__descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="reason__img">
-                <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола"  width="320" height="260">
+
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" width="320" height="260">
+                </picture>
+
               </div>
             </li>
 
@@ -136,7 +139,7 @@
               <div class="reason__item-info">
                 <b class="reason__title">Красивая дорога</b>
                 <span class="reason__number">&#x2012; №4 &#x2012;</span>
-                <p class="reason__descr">Ехать в седону из лас-вегаса  совсем не скучно!</p>
+                <p class="reason__descr">Ехать в седону из <i>лас-вегаса</i> совсем <i>не скучно!</i></p>
               </div>
             </li>
 
@@ -156,7 +159,7 @@
 
       <section class="reservation">
         <h2 class="reservation__title">Заинтересовались?</h2>
-        <p class="reservation__descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="reservation__descr">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="reservation__btn btn" href="reservation.html">Найти гостиницу</a>
       </section>
 
@@ -173,7 +176,7 @@
         </p>
         <p class="page‐footer__developer">
           Разработано:
-          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width='40px' height='51px'><path id="academy" fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg></a>
+          <a href="#"><svg class="page‐footer__acdemylogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="42" height="42"><path id="academy" fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg></a>
         </p>
       </footer>
 
@@ -182,6 +185,8 @@
     <script src="js/scrtips.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
     </script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
 
   </body>
 
