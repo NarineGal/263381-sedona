@@ -4,15 +4,12 @@
   height: 48px;
 
   display: inline-block;
-  margin-right: 2px;
+  margin-left: 1px;
+  margin-right: 1px;
   vertical-align: middle;
   text-align: center;
 
   font-size: 0;
-
-  &:last-child {
-    margin-right: 0px;
-  }
 
 }
 

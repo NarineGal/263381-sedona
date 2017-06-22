@@ -15,6 +15,7 @@ $white : #ffffff;
 $tablet-widths: ( min-width: 768px );
 $desktop-widths: ( min-width: 1200px );
 $mobile-widths-only: (max-width: 767px);
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
 $btn-bg-color: #81b3d2;
 $btn-txt-color: #ffffff;

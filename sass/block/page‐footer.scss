@@ -33,24 +33,33 @@
 }
 .page‐footer__developer {
 
+  position: relative;
+
   width: 100%;
   height: 48px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 76px;
 
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
 
   line-height: 48px;
-  text-align: center;
+  text-align: left;
 
 }
 
-.page‐footer__developer svg {
+.page‐footer__acdemylogo {
+
+  position: absolute;
+  top: 4px;
+  left: 163px;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
 
   vertical-align: middle;
-  padding-left: 3px;
+  margin-left: 7px;
 
   &:hover #academy {
     fill: $btn-bg-color;
@@ -62,56 +71,77 @@
 
 }
 
+// For Tablet -----------------
+
 @media #{$tablet-widths} {
 
-  .page‐footer {
+.page‐footer {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-    height: 120px;
-
-  }
-
-  .page‐footer__hashtag {
-    width: 196px;
-    margin: 0;
-    margin-left: 40px;
-    text-align: left;
-
-  }
-  .page‐footer__social {
-    width: 256px;
-    margin: 0;
-    text-align: center;
-  }
-  .page‐footer__developer {
-    width: 196px;
-    margin: 0;
-    margin-right: 40px;
-    text-align: right;
-  }
+  height: 111px;
 
 }
 
+.page‐footer__hashtag {
+  width: 140px;
+  margin: 0;
+  margin-left: 40px;
+  text-align: left;
+
+}
+.page‐footer__social {
+  flex-grow: 1;
+  width: auto;
+  margin: 0;
+  padding-top: 1px;
+  text-align: center;
+}
+.page‐footer__developer {
+  width: 140px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  margin-right: 40px;
+  text-align: left;
+}
+.page‐footer__acdemylogo {
+  left: 98px;
+}
+
+}
+
+// For Desktop -----------------
+
 @media #{$desktop-widths} {
 
-  .page‐footer__hashtag {
-    width: 33%;
-    margin: 0px;
-    text-align: center;
-  }
-  .page‐footer__social {
-    width: 34%;
-    margin: 0;
-  }
-  .page‐footer__developer {
-    width: 33%;
-    margin: 0px;
-    padding-right: 20px;
-    text-align: right;
-  }
+.page‐footer {
+
+  padding: 23px 0px 17px;
+
+}
+
+.page‐footer__hashtag {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.page‐footer__social {
+  width: 400px;
+  margin: 0;
+}
+.page‐footer__developer {
+  width: 400px;
+  margin: 0px;
+  padding-right: 80px;
+  text-align: right;
+}
+
+.page‐footer__acdemylogo {
+  left: 315px;
+}
 
 }

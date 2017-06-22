@@ -165,99 +165,122 @@
 
 }
 
+
+
+// For Tablet & Desktop ===================================
+
+
 @media #{$tablet-widths} {
 
-  .main-nav {
+.main-nav {
 
-    z-index: 11;
+  z-index: 11;
 
+}
+
+.main-nav__toggle {
+
+  display: none;
+
+}
+
+.main-nav__list {
+
+  height: 57px;
+  display: flex;
+
+}
+
+.main-nav__item {
+
+  width: 20%;
+
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+
+  border-bottom: none;
+
+  &:nth-child(2) {
+    margin-right: auto;
+    padding-left: 3px;
   }
 
-  .main-nav__toggle {
+  &:nth-child(3) {
+    margin-left: auto;
+    padding-left: 8px;
+  }
 
+  &:nth-child(4) {
+    padding-left: 3px;
+  }
+
+
+  &::before {
     display: none;
-
   }
 
-  .main-nav__list {
-
-    height: 57px;
-    display: flex;
-
+  &:last-child {
+    box-shadow: none;
   }
 
-  .main-nav__item {
+  &:hover {
+    background: none;
+  }
 
-    width: 20%;
+  &:active {
+    background: none;
+  }
 
-    font-size: 14px;
+  & a {
     color: #000000;
-    background-color: #ffffff;
-
-    border-bottom: none;
-
-    &:nth-child(2) {
-
-      margin-right: auto;
-
-    }
-
-    &:nth-child(3) {
-
-      margin-left: auto;
-
-    }
-
-
-    &::before {
-
-      display: none;
-
-    }
-
-    &:last-child {
-
-      box-shadow: none;
-
-    }
 
     &:hover {
-      background: none;
+      color: #81b3d2;
     }
 
     &:active {
-      background: none;
+      color: #cacaca;
+    }
+  }
+
+}
+
+.main-nav__item‐‐active {
+
+  & a {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
     }
 
-    & a {
-      color: #000000;
-
-      &:hover {
-        color: #81b3d2;
-      }
-
-      &:active {
-        color: #cacaca;
-      }
+    &:active {
+      color: #dbd8d5;
     }
 
   }
 
-  .main-nav__item‐‐active {
+}
 
-    & a {
-      color: #766357;
+}
 
-      &:hover {
-        color: #604e43;
-      }
+@media #{$desktop-widths} {
 
-      &:active {
-        color: #dbd8d5;
-      }
+.main-nav__item {
 
-    }
-
+  &:nth-child(2) {
+    margin-left: -3px;
   }
+
+  &:nth-child(3) {
+    margin-right: 3px;
+  }
+
+  &:nth-child(4) {
+    margin-right: 1px;
+  }
+
+}
 
 }
