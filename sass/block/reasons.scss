@@ -1,14 +1,12 @@
-.reasons {
+.reasons  {
   margin: 0;
   padding: 0;
 }
 
-.reasons__header {
-
+.reasons__header  {
   margin: 0;
   padding: 40px 30px 44px;
-
-/*
+  /*
 with base64
 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScwIDAsIDAgMjYsIDE2MCAyNicgZmlsbD0nIzgxYjNkMicvPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScxNjAgMjYsIDMyMCAyNiwgMzIwIDAnIGZpbGw9JyM4MWIzZDInLz4NCiAgICA8L3N2Zz4=")
 
@@ -20,88 +18,74 @@ url("data:image/svg+xml;utf8,
     </svg>")
 */
 
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScwIDAsIDAgMjYsIDE2MCAyNicgZmlsbD0nIzgxYjNkMicvPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScxNjAgMjYsIDMyMCAyNiwgMzIwIDAnIGZpbGw9JyM4MWIzZDInLz4NCiAgICA8L3N2Zz4=");
+  background-color: $white;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMjAnIGhlaWdodD0nMjYnPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScwIDAsIDAgMjYsIDE2MCAyNicgZmlsbD0nIzgxYjNkMicvPg0KICAgICAgPHBvbHlnb24gcG9pbnRzPScxNjAgMjYsIDMyMCAyNiwgMzIwIDAnIGZpbGw9JyM4MWIzZDInLz4NCiAgICA8L3N2Zz4=');
   background-repeat: no-repeat;
   background-position: 0 bottom;
   background-size: 320px 17px;
-
 }
 
-.reasons__title {
+.reasons__title  {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
 
   margin: 0 0 28px;
   padding: 0;
 
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  text-transform: uppercase;
   text-align: center;
-
-  & span {
+  text-transform: uppercase;
+  & span  {
     font-style: normal;
-    letter-spacing: 0.45px;
-  }
 
+    letter-spacing: .45px;
+  }
 }
 
-.reasons__descr {
+.reasons__descr  {
+  font-size: 14px;
+  line-height: 26px;
 
   margin: 0;
   padding: 0;
 
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
   text-align: center;
-
+  text-transform: uppercase;
 }
 
 // For Tablet ----------------------------------
 
-@media #{$tablet-widths} {
+@media #{$tablet-widths}  {
+  .reasons__header  {
+    padding: 50px 130px 50px;
 
-.reasons__header {
+    background-image: none;
+  }
 
-  padding: 50px 130px 50px;
-  background-image: none;
+  .reasons__title  {
+    font-size: 21px;
 
-}
+    margin: 0 0 28px;
+  }
 
-.reasons__title {
-
-  margin: 0 0 28px;
-
-  font-size: 21px;
-
-}
-
-.reasons__descr {
-  letter-spacing: 0.04px;
-}
-
+  .reasons__descr  {
+    letter-spacing: .04px;
+  }
 }
 
 
 // For Desktop -------------------------------
 
-@media #{$desktop-widths} {
+@media #{$desktop-widths}  {
+  .reasons__header  {
+    padding: 50px 350px 50px;
+  }
 
-.reasons__header {
+  .reasons__title  {
+    font-size: 21px;
+  }
 
-  padding: 50px 350px 50px;
-
-}
-
-.reasons__title {
-
-  font-size: 21px;
-
-}
-
-.reasons__descr {
-  letter-spacing: 0.05px;
-}
-
+  .reasons__descr  {
+    letter-spacing: .05px;
+  }
 }
