@@ -1,7 +1,5 @@
-.page-wrapper {
-
-  @include container();
-
+.page-wrapper  {
   background-color: $white;
 
+  @include container();
 }

@@ -1,34 +1,40 @@
-* {
+*  {
   box-sizing: border-box;
 }
-.borderer {
+.borderer  {
   outline: 1px solid red;
 }
+.borderer2  {
+  outline: 1px solid yellow;
+}
+.borderer3  {
+  outline: 1px solid blue;
+}
 
-body {
+body  {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 26px;
 
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
-  min-width: 320px;
-
-  font-family: 'PT Sans', Arial, sans-serif;
-  font-size: 18px;
-  line-height: 26px;
   color: $text-color;
-  font-style: normal;
-
   background-color: $site-bg-color;
-
 }
 
-img {
+img  {
   max-width: 100%;
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden  {
   position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 
   width: 1px;
   height: 1px;
@@ -36,15 +42,18 @@ img {
   padding: 0;
 
   border: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
   margin-top: 0;
   padding-top: 0;
 }
-p, ul  {
+p,
+ul  {
   margin-top: 0;
 }

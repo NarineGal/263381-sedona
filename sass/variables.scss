@@ -1,5 +1,23 @@
-$text-color: #333333;
-$site-bg-color: #f2f2f2;
+//Project colors  ----------------------------------------
+
+$text-color:            #333333;
+$site-bg-color:         #f2f2f2;
+
+$element-bg-color:      #81b3d2;
+
+$btn-bg-color:          #81b3d2;
+$btn-txt-color:         #ffffff;
+
+$btn-bg-color-hover:    #669ec0;
+$btn-txt-color-hover:   #ffffff;
+
+$btn-bg-color-active:   #5496bd;
+$btn-txt-color-active:  #94b9d2;
+
+$academy-active:        #b2b2b2;
+
+$imgbg-promo:           #6d879c;
+
 
 $gray-base:              #000000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
@@ -17,16 +35,6 @@ $desktop-widths: ( min-width: 1200px );
 $mobile-widths-only: (max-width: 767px);
 $retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
 
-$btn-bg-color: #81b3d2;
-$btn-txt-color: #ffffff;
-
-$btn-bg-color-hover: #669ec0;
-$btn-txt-color-hover: #ffffff;
-
-$btn-bg-color-active: #5496bd;
-$btn-txt-color-active: #94b9d2;
-
-$academy-active: #b2b2b2;
 
 //base64 encoded icons
 $icon-replay      : "PHN2ZyBmaWxsPScjMDAwMDAwJyAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB3aWR0aD0nMTYnIGhlaWdodD0nMjAnPjxwYXRoIGQ9Ik04LDRWMEwzLDVsNSw1VjZjMy4zMTUsMCw2LDIuNjg2LDYsNnMtMi42ODUsNi02LDZzLTYtMi42ODYtNi02SDBjMCw0LjQyLDMuNTgsOCw4LDhzOC0zLjU4LDgtOFMxMi40Miw0LDgsNHoiLz48L3N2Zz4=";

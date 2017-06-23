@@ -1,37 +1,35 @@
-.page‐footer {
-
+.page‐footer  {
   display: block;
-  padding: 23px 20px 17px;
 
+  padding: 23px 20px 17px;
 }
 
-.page‐footer__hashtag {
+.page‐footer__hashtag  {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  line-height: 48px;
 
   width: 100%;
   height: 48px;
   margin: 0;
   padding: 0;
 
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-  text-transform: uppercase;
-
-  line-height: 48px;
   text-align: center;
-
+  text-transform: uppercase;
 }
-.page‐footer__social {
-
+.page‐footer__social  {
   width: 100%;
   height: 48px;
   margin: 26px 0 32px;
   padding: 0;
 
   text-align: center;
-
 }
-.page‐footer__developer {
+.page‐footer__developer  {
+  font-size: 14px;
+  line-height: 26px;
+  line-height: 48px;
 
   position: relative;
 
@@ -40,108 +38,99 @@
   margin: 0;
   padding: 0 0 0 76px;
 
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-
-  line-height: 48px;
   text-align: left;
-
+  text-transform: uppercase;
 }
 
-.page‐footer__acdemylogo {
-
+.page‐footer__acdemylogo  {
   position: absolute;
   top: 4px;
   left: 163px;
+
   display: inline-block;
+
   width: 42px;
   height: 42px;
-
-  vertical-align: middle;
   margin-left: 7px;
 
-  &:hover #academy {
+  vertical-align: middle;
+  &:hover #academy  {
     fill: $btn-bg-color;
   }
-
-  &:active #academy {
+  &:active #academy  {
     fill: $academy-active;
   }
-
 }
 
 // For Tablet -----------------
 
-@media #{$tablet-widths} {
+@media #{$tablet-widths}  {
+  .page‐footer  {
+    display: flex;
+    flex-direction: row;
 
-.page‐footer {
+    height: 111px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-  height: 111px;
+  .page‐footer__hashtag  {
+    width: 140px;
+    margin: 0;
+    margin-left: 40px;
 
-}
+    text-align: left;
+  }
+  .page‐footer__social  {
+    width: auto;
+    margin: 0;
+    padding-top: 1px;
 
-.page‐footer__hashtag {
-  width: 140px;
-  margin: 0;
-  margin-left: 40px;
-  text-align: left;
+    text-align: center;
 
-}
-.page‐footer__social {
-  flex-grow: 1;
-  width: auto;
-  margin: 0;
-  padding-top: 1px;
-  text-align: center;
-}
-.page‐footer__developer {
-  width: 140px;
-  margin: 0;
-  padding: 0 0 0 10px;
-  margin-right: 40px;
-  text-align: left;
-}
-.page‐footer__acdemylogo {
-  left: 98px;
-}
+    flex-grow: 1;
+  }
+  .page‐footer__developer  {
+    width: 140px;
+    margin: 0;
+    margin-right: 40px;
+    padding: 0 0 0 10px;
 
+    text-align: left;
+  }
+  .page‐footer__acdemylogo  {
+    left: 98px;
+  }
 }
 
 // For Desktop -----------------
 
-@media #{$desktop-widths} {
+@media #{$desktop-widths}  {
+  .page‐footer  {
+    padding: 23px 0 17px;
+  }
 
-.page‐footer {
+  .page‐footer__hashtag  {
+    width: 400px;
+    margin: 0;
+    padding: 0;
 
-  padding: 23px 0px 17px;
+    text-align: center;
+  }
+  .page‐footer__social  {
+    width: 400px;
+    margin: 0;
+  }
+  .page‐footer__developer  {
+    width: 400px;
+    margin: 0;
+    padding-right: 80px;
 
-}
+    text-align: right;
+  }
 
-.page‐footer__hashtag {
-  width: 400px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.page‐footer__social {
-  width: 400px;
-  margin: 0;
-}
-.page‐footer__developer {
-  width: 400px;
-  margin: 0px;
-  padding-right: 80px;
-  text-align: right;
-}
-
-.page‐footer__acdemylogo {
-  left: 315px;
-}
-
+  .page‐footer__acdemylogo  {
+    left: 315px;
+  }
 }

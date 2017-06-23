@@ -1,81 +1,71 @@
-.reservation {
-
+.reservation  {
   margin: 0;
   padding: 28px 20px 50px;
-  background-color: #ffffff;
 
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 
+  background-color: $white;
 }
 
-.reservation__title {
+.reservation__title  {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
 
   margin: 0 0 18px;
   padding: 0;
-
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-
 }
-.reservation__descr {
-
-  margin: 0px 0px 36px;
-  padding: 0;
-
+.reservation__descr  {
   font-size: 14px;
   line-height: 24px;
 
-  br {
+  margin: 0 0 36px;
+  padding: 0;
+  br  {
     display: none;
   }
-
 }
 
-.reservation__btn {
-
+.reservation__btn  {
   display: block;
-  padding: 16px 17px;
 
+  padding: 16px 17px;
 }
 
 // For Tablet ---------------
 
-@media #{$tablet-widths} {
+@media #{$tablet-widths}  {
+  .reservation  {
+    padding: 56px 155px 58px;
+  }
 
-.reservation {
-  padding: 56px 155px 58px;
-}
+  .reservation__title  {
+    font-size: 30px;
 
-.reservation__title {
-  margin: 0 0 30px;
-  font-size: 30px;
-}
+    margin: 0 0 30px;
+  }
 
-.reservation__descr {
-  margin: 0 0 42px;
-  br {
-    display: inline;
+  .reservation__descr  {
+    margin: 0 0 42px;
+    br  {
+      display: inline;
+    }
+  }
+
+  .reservation__btn  {
+    padding: 16px 80px;
   }
 }
 
-.reservation__btn {
-  padding: 16px 80px;
-}
-
-}
-
 // For Tablet ---------------
 
-@media #{$desktop-widths} {
+@media #{$desktop-widths}  {
+  .reservation  {
+    padding: 56px 371px 66px;
+  }
 
-.reservation {
-  padding: 56px 371px 66px;
-}
-
-.reservation__descr {
-  margin: 0 0 47px;
-}
-
+  .reservation__descr  {
+    margin: 0 0 47px;
+  }
 }

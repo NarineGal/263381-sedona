@@ -1,18 +1,19 @@
-.btn {
-  background-color: #81b3d2;
-  color: #ffffff;
+.btn  {
   font-size: 21px;
   line-height: 26px;
+
   padding: 20px;
+
   text-align: center;
   text-decoration: none;
 
-  &:hover {
+  color: $white;
+  background-color: $btn-bg-color;
+  &:hover  {
     background-color: #669ec0;
   }
-  &:active {
-    background-color: #5496bd;
+  &:active  {
     color: #94b9d2;
+    background-color: #5496bd;
   }
-
 }
