@@ -23,6 +23,8 @@ function step1() {
   pop.classList.remove('contact‐form__popup--closed');
   pop.classList.add('contact‐form__popup--opened');
 
+  return false;
+
 }
 
 function step2() {
@@ -36,11 +38,7 @@ function step2() {
   pop.classList.remove('contact‐form__popup--closed');
   pop.classList.add('contact‐form__popup--opened');
 
-}
-
-function step3() {
-
-  document.getElementById('xxx').click();
+  return true;
 
 }
 

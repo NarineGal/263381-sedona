@@ -1,7 +1,7 @@
 .contact‐form  {
   display: block;
 
-  margin: 0;
+  margin: 37px 0 38px;
   padding: 0;
 }
 
@@ -278,9 +278,14 @@
 }
 
 /*Pop-ups*/
+.contact‐form__popup-error  {
+
+}
 
 .contact‐form__popup-error  {
+
   position: fixed;
+
   z-index: 200;
   top: 50%;
   left: 50%;
@@ -299,7 +304,9 @@
 }
 
 .contact‐form__popup-ok  {
+
   position: fixed;
+
   z-index: 200;
   top: 50%;
   left: 50%;
