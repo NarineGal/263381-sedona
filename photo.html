@@ -8,37 +8,6 @@
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
 
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url( "img/sedona-photo-mobile.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "img/sedona-photo-tablet.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1200px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "img/sedona-photo-desktop-m.png" );
-        }
-      }
-
-      BODY {
-        opacity: .5;
-      }
-    </style>
-    <link rel="stylesheet" href="js/styles.css">
-    <script src="js/pixel-glass.js"></script>
-    <!-- // Pixel Glass -->
-
   </head>
   <body>
 
@@ -83,20 +52,20 @@
 
       <main class="page-content page-content--inner">
 
-        <article class="photo-video">
+        <section class="photo-video">
 
           <h2 class="photo-video__title">Фото и видео</h2>
           <p class="photo-video__descr">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 
           <section class="photos">
 
-            <h2 class="visually-hidden photos__title">Фото</h2>
+            <h3 class="visually-hidden photos__title">Фото</h3>
 
             <div class="photos__list">
 
-              <ul class="photos__item">
+              <article class="photos__item">
 
-                <li class="photos__pic">
+                <figure class="photos__pic">
                   <a href="img/photo-1-desktop@1x.jpg" target="_blank">
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
@@ -104,19 +73,21 @@
                       <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Картина - Неродные просторы" width="280" height="280">
                     </picture>
                   </a>
-                </li>
+                </figure>
 
-                <li class="photos__info">
-                  <h3 class="photos__info-title">Неродные просторы</h3>
-                  <span class="photos__author">Автор фото: Борис</span>
-                  <span class="photos__likes">1350</span>
-                </li>
+                <div class="photos__info">
+                  <h1 class="photos__info-title">Неродные просторы</h1>
+                  <p class="photos__author">Автор фото: Борис</p>
+                  <div class="photos__likes">
+                    <button class="photos__like-it" type="button" title="Like">Like</button> 1350
+                  </div>
+                </div>
 
-              </ul>
+              </article>
 
-              <ul class="photos__item">
+              <article class="photos__item">
 
-                <li class="photos__pic">
+                <figure class="photos__pic">
                   <a href="img/photo-2-desktop@1x.jpg" target="_blank">
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
@@ -124,19 +95,21 @@
                       <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Картина - Местная растительность" width="280" height="280">
                     </picture>
                   </a>
-                </li>
+                </figure>
 
-                <li class="photos__info">
-                  <h3 class="photos__info-title">Местная растительность</h3>
-                  <span class="photos__author">Автор фото: Сергей</span>
-                  <span class="photos__likes">143</span>
-                </li>
+                <div class="photos__info">
+                  <h1 class="photos__info-title">Местная растительность</h1>
+                  <p class="photos__author">Автор фото: Сергей</p>
+                  <div class="photos__likes">
+                    <button class="photos__like-it" type="button" title="Like">Like</button> 143
+                  </div>
+                </div>
 
-              </ul>
+              </article>
 
-              <ul class="photos__item">
+              <article class="photos__item">
 
-                <li class="photos__pic">
+                <figure class="photos__pic">
                   <a href="img/photo-3-desktop@1x.jpg" target="_blank">
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
@@ -144,19 +117,21 @@
                       <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Картина - Дорога на север" width="280" height="280">
                     </picture>
                   </a>
-                </li>
+                </figure>
 
-                <li class="photos__info">
-                  <h3 class="photos__info-title">Дорога на север</h3>
-                  <span class="photos__author">Автор фото: Петр</span>
-                  <span class="photos__likes">96</span>
-                </li>
+                <div class="photos__info">
+                  <h1 class="photos__info-title">Дорога на север</h1>
+                  <p class="photos__author">Автор фото: Петр</p>
+                  <div class="photos__likes">
+                    <button class="photos__like-it" type="button" title="Like">Like</button> 96
+                  </div>
+                </div>
 
-              </ul>
+              </article>
 
-              <ul class="photos__item">
+              <article class="photos__item">
 
-                <li class="photos__pic">
+                <figure class="photos__pic">
                   <a href="img/photo-4-desktop@1x.jpg" target="_blank">
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
@@ -164,15 +139,17 @@
                       <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Картина - Мост дьявола" width="280" height="280">
                     </picture>
                   </a>
-                </li>
+                </figure>
 
-                <li class="photos__info">
-                  <h3 class="photos__info-title">Мост дьявола</h3>
-                  <span class="photos__author">Автор фото: Антон</span>
-                  <span class="photos__likes">254</span>
-                </li>
+                <div class="photos__info">
+                  <h1 class="photos__info-title">Мост дьявола</h1>
+                  <p class="photos__author">Автор фото: Антон</p>
+                  <div class="photos__likes">
+                    <button class="photos__like-it" type="button" title="Like">Like</button> 254
+                  </div>
+                </div>
 
-              </ul>
+              </article>
 
             </div>
 
@@ -180,7 +157,7 @@
 
           <section class="video">
 
-            <h2 class="video__title">Все еще сомневаетесь?</h2>
+            <p class="video__title">Все еще сомневаетесь?</p>
 
             <p class="video__descr">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
 
@@ -205,7 +182,7 @@
 
           </section>
 
-        </article>
+        </section>
 
       </main>
 

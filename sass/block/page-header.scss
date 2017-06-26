@@ -25,10 +25,12 @@
     background-color: $white;
   }
   img  {
-    display: inline-block;
+    display: inline-block; /*middle*/
 
     margin-top: 0;
     margin-left: 2px;
+
+    vertical-align: middle;
   }
 }
 
@@ -173,11 +175,9 @@
     left: 505px;
 
     width: 190px;
-    margin-left: 1;
     img  {
       width: 187px;
       height: 96px;
-      margin-left: -1px;
     }
   }
 

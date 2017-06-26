@@ -51,6 +51,18 @@
   &::before  {
     display: none;
   }
+/*
+  &::after  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+
+    content: '';
+    background: url('../img/icons/icon-burger.svg') no-repeat bottom center;
+  }
+*/
 }
 
 .reason__item-info  {
