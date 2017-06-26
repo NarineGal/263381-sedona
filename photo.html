@@ -7,6 +7,38 @@
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
+
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url( "img/sedona-photo-mobile.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/sedona-photo-tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/sedona-photo-desktop-m.png" );
+        }
+      }
+
+      BODY {
+        opacity: .5;
+      }
+    </style>
+    <link rel="stylesheet" href="js/styles.css">
+    <script src="js/pixel-glass.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
   <body>
 
@@ -157,9 +189,11 @@
 
               <div class="video__controls">
 
-                <button class="video__control video__control--replay" type="button" title="Повторить">Повторить</button>
+                <div class="video__line">
+                  <button class="video__control video__control--current" type="button">Текущее положение</button>
+                </div>
 
-                <button class="video__control video__control--current" type="button">Текущее положение</button>
+                <button class="video__control video__control--replay" type="button" title="Повторить">Повторить</button>
 
                 <button class="video__control video__control--subtitles" type="button" title="Субтитры">Субтитры</button>
 
