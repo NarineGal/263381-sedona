@@ -135,10 +135,12 @@
     background-color: #669ec0;
   }
   &:active  {
-    color: #94b9d2;
     background-color: #5496bd;
+    a {
+      color: #94b9d2;
+    }
   }
-  & a  {
+  a  {
     text-decoration: none;
 
     color: $white;
@@ -202,7 +204,7 @@
     &:active  {
       background: none;
     }
-    & a  {
+    a  {
       color: #000;
       &:hover  {
         color: $element-bg-color;

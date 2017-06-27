@@ -1,5 +1,5 @@
 .reservation  {
-  margin: 0;
+  margin: -2px 0 0;
   padding: 28px 20px 50px;
 
   text-align: center;
@@ -28,10 +28,11 @@
 }
 
 .reservation__btn  {
-  display: block;
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+  line-height: 26px;
+
+  display: block;
 
   padding: 16px 17px;
 }
@@ -43,7 +44,7 @@
     padding: 56px 155px 58px;
   }
 
-  .reservation__title  {
+  .reservation__akcent  {
     font-size: 30px;
 
     margin: 0 0 30px;

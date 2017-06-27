@@ -33,11 +33,7 @@
   height: 266px;
 
   background: transparent url('../img/video-mobile@1x.jpg') no-repeat 0 0;
-  background-size: 320px 201px;
-  @media #{$retina}  {
-    background: transparent url('../img/video-mobile@2x.jpg') no-repeat 0 0;
-    background-size: 320px 201px;
-  }
+  background-size: 320px auto;
 }
 
 .video__controls  {
@@ -154,6 +150,15 @@
   background-size: 10px 10px;
 }
 
+@media #{$mobile-widths-only}  {
+  @media #{$retina}  {
+    .video__content  {
+      background: transparent url('../img/video-mobile@2x.jpg') no-repeat 0 0;
+      background-size: 320px auto;
+    }
+  }
+}
+
 
 @media #{$tablet-widths}  {
   .video  {
@@ -173,13 +178,13 @@
 
   .video__content  {
     width: 648px;
-    height: 500px;
+    height: 499px;
 
     background: transparent url('../img/video-tablet@1x.jpg') no-repeat 0 0;
-    background-size: 648px 500px;
+    background-size: 648px auto;
     @media #{$retina}  {
       background: transparent url('../img/video-tablet@2x.jpg') no-repeat 0 0;
-      background-size: 648px 500px;
+      background-size: 648px auto;
     }
   }
 

@@ -4,9 +4,9 @@
 
   padding: 20px;
 
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
 
   color: $white;
   background-color: $btn-bg-color;
@@ -16,5 +16,10 @@
   &:active  {
     color: #94b9d2;
     background-color: #5496bd;
+  }
+  &:disabled  {
+    color: $white;
+    background-color: #e5e5e5;
+    cursor: not-allowed;
   }
 }
