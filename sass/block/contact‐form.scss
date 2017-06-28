@@ -134,6 +134,18 @@
   cursor: pointer;
   vertical-align: middle;
 
+  &:hover::before  {
+    border: solid 16px #e5e5e5;
+    background-color: #e5e5e5;
+  }
+  &:active::before  {
+    border: solid 16px #d5d5d5;
+    background-color: #d5d5d5;
+  }
+  &:active::after  {
+    background-color: #a4a4a4;
+  }
+
 }
 
 .contact‐form__label-emulation-rb::before,
@@ -192,6 +204,16 @@
 
   cursor: pointer;
   vertical-align: middle;
+
+  &:hover::before  {
+    background-color: #e5e5e5;
+  }
+  &:active::before  {
+    background-color: #d5d5d5;
+  }
+  &:active::after  {
+    background: transparent url('data:image/svg+xml;base64,#{str-replace($icon-tick, "MDAwMDAw", "YTRhNGE0")}') no-repeat 50% 50%;
+  }
 }
 
 .contact‐form__label-emulation-chb::before,
@@ -221,7 +243,7 @@
   transition-property: transform ;
   transform: scale(0);
 
-  background: url('../img/icon-tick.svg') no-repeat 50% 50%;
+  background: transparent url('data:image/svg+xml;base64,#{str-replace($icon-tick, "MDAwMDAw", "MzMzMzMz")}') no-repeat 50% 50%;
 }
 
 .contact‐form__check  {
