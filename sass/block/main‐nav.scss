@@ -169,8 +169,9 @@
 
   .main-nav__list  {
     display: flex;
+    flex-wrap: wrap;
 
-    height: 57px;
+    min-height: 57px;
   }
 
   .main-nav__item  {

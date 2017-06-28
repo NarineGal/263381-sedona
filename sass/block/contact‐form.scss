@@ -134,18 +134,6 @@
   cursor: pointer;
   vertical-align: middle;
 
-  &:hover::before  {
-    border: solid 16px #e5e5e5;
-    background-color: #e5e5e5;
-  }
-  &:active::before  {
-    border: solid 16px #d5d5d5;
-    background-color: #d5d5d5;
-  }
-  &:active::after  {
-    background-color: #a4a4a4;
-  }
-
 }
 
 .contact‐form__label-emulation-rb::before,
@@ -190,6 +178,38 @@
   transform: scale(1.1);
 }
 
+.contact‐form__radio:not(:disabled) ~ label {
+  &:hover::before  {
+    border: solid 16px #e5e5e5;
+    background-color: #e5e5e5;
+  }
+  &:active::before  {
+    border: solid 16px #d5d5d5;
+    background-color: #d5d5d5;
+  }
+  &:active::after  {
+    background-color: #a4a4a4;
+  }
+}
+
+.contact‐form__radio:not(:checked):disabled ~ label {
+  cursor: not-allowed;
+  &::before  {
+    border: solid 16px #d5d5d5;
+    background-color: #d5d5d5;
+  }
+}
+.contact‐form__radio:checked:disabled ~ label {
+  cursor: not-allowed;
+  &::before  {
+    border: solid 16px #d5d5d5;
+    background-color: #d5d5d5;
+  }
+  &::after  {
+    background-color: #a4a4a4;
+  }
+}
+
 
 /* Checkbox emulation */
 
@@ -205,15 +225,6 @@
   cursor: pointer;
   vertical-align: middle;
 
-  &:hover::before  {
-    background-color: #e5e5e5;
-  }
-  &:active::before  {
-    background-color: #d5d5d5;
-  }
-  &:active::after  {
-    background: transparent url('data:image/svg+xml;base64,#{str-replace($icon-tick, "MDAwMDAw", "YTRhNGE0")}') no-repeat 50% 50%;
-  }
 }
 
 .contact‐form__label-emulation-chb::before,
@@ -253,6 +264,42 @@
 .contact‐form__check:checked ~ label::after  {
   transform: scale(1.1);
 }
+
+
+.contact‐form__check:not(:disabled) ~ label {
+  &:hover::before  {
+    background-color: #e5e5e5;
+  }
+  &:active::before  {
+    background-color: #d5d5d5;
+  }
+  &:active::after  {
+    background: transparent url('data:image/svg+xml;base64,#{str-replace($icon-tick, "MDAwMDAw", "YTRhNGE0")}') no-repeat 50% 50%;
+  }
+}
+
+.contact‐form__check:not(:checked):disabled ~ label {
+  cursor: not-allowed;
+  &::before  {
+    background-color: #d5d5d5;
+  }
+  &::after  {
+    background: none;
+  }
+}
+
+.contact‐form__check:checked:disabled ~ label {
+  cursor: not-allowed;
+  &::before  {
+    background-color: #d5d5d5;
+  }
+  &::after  {
+    background: transparent url('data:image/svg+xml;base64,#{str-replace($icon-tick, "MDAwMDAw", "YTRhNGE0")}') no-repeat 50% 50%;
+  }
+}
+
+
+
 
 .contact‐form__textarea  {
   font-size: 18px;
