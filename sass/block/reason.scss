@@ -45,26 +45,6 @@
   }
 }
 
-.reason__item--icon  {
-  background-color: $white
-  ;
-  &::before  {
-    display: none;
-  }
-  /*
-  &::after  {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-
-    content: '';
-    background: url('../img/icons/icon-burger.svg') no-repeat bottom center;
-  }
-*/
-}
-
 .reason__item-info  {
   padding: 26px 35px 29px;
 
@@ -85,31 +65,78 @@
 }
 
 .reason__item-info--icon  {
+
+  position: relative;
+
   margin: 25px 0 25px;
   padding: 0 40px 0 70px;
 
   text-align: left;
-
   background-color: $white;
+
 }
-.reason__item-icon  {
-  position: absolute;
-  left: 20px;
-  svg  {
-    fill: $element-bg-color;
+
+.reason__item--icon-house  {
+
+  &::before  {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 20px;
+
+    width: 38px;
+    height: 38px;
+    background: $white url("../img/icons/icon-house.svg") no-repeat center center;
+    background-size: 38px 38px;
+
+    z-index: 10;
   }
 }
 
-.reason__item-icon--house  {
-  top: -10px;
+.reason__item--icon-gift  {
+
+  &::before  {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 23px;
+
+    width: 32px;
+    height: 38px;
+    background: $white url("../img/icons/icon-gift.svg") no-repeat center center;
+    background-size: 32px 38px;
+
+    z-index: 10;
+  }
 }
-.reason__item-icon--gift  {
-  top: -12px;
-  left: 24px;
-}
-.reason__item-icon--burger  {
-  top: -2px;
-  left: 18px;
+
+.reason__item--icon-burger  {
+
+  &::before  {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 16px;
+
+    width: 40px;
+    height: 35px;
+    background: $white url("../img/icons/icon-burger.svg") no-repeat center center;
+    background-size: 40px 35px;
+
+    z-index: 10;
+  }
 }
 
 
@@ -255,44 +282,67 @@
     }
   }
 
-  .reason__item--icon  {
-    min-height: 330px;
-    padding: 115px 0 10px;
-
-    text-align: center;
-  }
   .reason__item-info--icon  {
     margin: 0;
     padding: 0 40px 0 70px;
 
     text-align: center;
 
-    background-color: $white
-    ;
+    background-color: $white;
+
   }
 
-  .reason__item-icon--house  {
-    top: 60px;
-    left: 90px;
-    svg  {
+  .reason__item--icon-house  {
+    min-height: 330px;
+    padding: 115px 0 10px;
+
+    text-align: center;
+
+    background-color: $white;
+
+    &::after {
+      top: 60px;
+      left: 90px;
+
       width: 75px;
       height: 72px;
+      background-size: 75px 72px;
     }
   }
-  .reason__item-icon--gift  {
-    top: 57px;
-    left: 95px;
-    svg  {
+
+  .reason__item--icon-burger  {
+    min-height: 330px;
+    padding: 115px 0 10px;
+
+    text-align: center;
+
+    background-color: $white;
+
+    &::after {
+      top: 61px;
+      left: 91px;
+
+      width: 75px;
+      height: 72px;
+      background-size: 75px 72px;
+    }
+  }
+
+  .reason__item--icon-gift  {
+    min-height: 330px;
+    padding: 115px 0 10px;
+
+    text-align: center;
+
+    background-color: $white;
+
+    &::after {
+      top: 57px;
+      left: 96px;
+
       width: 64px;
       height: 75px;
-    }
-  }
-  .reason__item-icon--burger  {
-    top: 61px;
-    left: 90px;
-    svg  {
-      width: 75px;
-      height: 72px;
+      background-size: 64px 75px;
     }
   }
 
@@ -391,11 +441,16 @@
     width: 800px;
   }
 
-  .reason__item--icon  {
+  .reason__item--icon-house  {
     min-height: 330px;
     padding: 114px 0 10px;
 
     text-align: center;
+
+    &::after {
+      left: 161px;
+    }
+
     .reason__title  {
       padding: 0 130px;
     }
@@ -407,15 +462,48 @@
     }
   }
 
-  .reason__item-icon--house  {
-    left: 160px;
+  .reason__item--icon-gift  {
+    min-height: 330px;
+    padding: 114px 0 10px;
+
+    text-align: center;
+
+    &::after {
+      left: 167px;
+    }
+
+    .reason__title  {
+      padding: 0 130px;
+    }
+    .reason__descr  {
+      padding: 0 50px;
+      br  {
+        display: inline;
+      }
+    }
   }
-  .reason__item-icon--gift  {
-    left: 168px;
+
+  .reason__item--icon-burger  {
+    min-height: 330px;
+    padding: 114px 0 10px;
+
+    text-align: center;
+
+    &::after {
+      left: 162px;
+    }
+
+    .reason__title  {
+      padding: 0 130px;
+    }
+    .reason__descr  {
+      padding: 0 50px;
+      br  {
+        display: inline;
+      }
+    }
   }
-  .reason__item-icon--burger  {
-    left: 162px;
-  }
+
 
 
   //-------------------------------------
